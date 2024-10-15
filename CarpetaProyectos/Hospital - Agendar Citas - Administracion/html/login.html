@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background: url('../img/fondologin.png') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .login-container {
+      background-color: rgba(255, 255, 255, 0.9);
+      width: 60%;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      color: #333;
+    }
+
+    h2 {
+      color: #007bff;
+    }
+
+    p {
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    input {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      width: 100%;
+    }
+
+    button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+      cursor: pointer;
+    }
+    a{
+      height: 40px;
+    }
+  </style>
+  <title>Login</title>
+</head>
+<body>
+
+  <div class="col-md-4 login-container">
+    <h2 class="text-center">Inicia sesión</h2>
+    <p class="text-center">Utiliza tu cuenta de Doctor</p>
+
+    <form id="loginForm" action="../php/login.php" method="post">
+      <div class="form-group">
+        <label for="usuario">Usuario:</label>
+        <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Ingresa tu usuario" maxlength="10">
+      </div>
+      <div class="form-group">
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Ingresa tu contraseña" maxlength="100">
+      </div>
+      <button type="submit" id="submitButton">Ingresar</button>
+      <a href="Citas.html" class="btn btn-secondary btn-block">Regresar a Citas</a>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../script/login.js"></script>
+</body>
+</html>

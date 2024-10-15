@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: rgba(255, 255, 255, 0);
+      width: 100%;
+      overflow-x: hidden;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .custom-container {
+      background-color: rgba(255, 255, 255, 0);
+    }
+
+    .login-container {
+      background-color: rgba(255, 255, 255, 0.9);
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      color: #333;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background-color: white;
+      padding: 2.5em;
+      border-radius: 25px;
+      transition: .4s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.4) 1px 2px 2px;
+    }
+
+    .form:hover {
+      transform: translateX(-0.5em) translateY(-0.5em);
+      border: 1px solid #171717;
+      box-shadow: 10px 10px 0px #666666;
+    }
+
+    .heading {
+      color: black;
+      padding-bottom: 2em;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .input {
+      border-radius: 5px;
+      border: 1px solid whitesmoke;
+      background-color: whitesmoke;
+      outline: none;
+      padding: 0.7em;
+      transition: .4s ease-in-out;
+    }
+
+    .input:hover {
+      box-shadow: 6px 6px 0px #969696,
+             -3px -3px 10px #ffffff;
+    }
+
+    .input:focus {
+      background: #ffffff;
+      box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .form .btn {
+      margin-top: 2em;
+      align-self: center;
+      padding: 0.7em;
+      padding-left: 1em;
+      padding-right: 1em;
+      border-radius: 10px;
+      border: none;
+      color: black;
+      transition: .4s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
+    }
+
+    .form .btn:hover {
+      box-shadow: 6px 6px 0px #969696,
+             -3px -3px 10px #ffffff;
+      transform: translateX(-0.5em) translateY(-0.5em);
+    }
+
+    .form .btn:active {
+      transition: .2s;
+      transform: translateX(0em) translateY(0em);
+      box-shadow: none;
+    }
+  </style>
+  <title>Login</title>
+</head>
+
+<body>
+
+  <div class="custom-container">
+    <div class="col-md-4 login-container">
+
+      <form id="loginForm" action="../php/loginAdmin.php" method="post" class="form">
+        <p class="heading">Cuenta de Administrador General</p>
+        <div class="form-group">
+          <label for="usuario">Usuario:</label>
+          <input type="text" class="input" id="usuario" name="usuario" placeholder="Ingresa tu usuario" maxlength="10">
+        </div>
+        <div class="form-group">
+          <label for="contrasena">Contraseña:</label>
+          <input type="password" class="input" id="contrasena" name="contrasena" placeholder="Ingresa tu contraseña"
+            maxlength="100">
+        </div>
+        <button style="width: 250px;" type="submit" class="btn" id="submitButton">Ingresar</button>
+        <a href="Citas.html" class="btn btn-secondary btn-block">Regresar a Citas</a>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../script/loginAdmin.js"></script>
+</body>
+
+</html>

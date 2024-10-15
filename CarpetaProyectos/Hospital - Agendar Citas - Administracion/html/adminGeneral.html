@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Usuarios</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: rgba(255, 255, 255, 0); /* Fondo blanco transparente */
+        }
+
+        .container-fluid {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco transparente */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow-y: auto; /* Agrega desplazamiento vertical si es necesario */
+        }
+
+        .tab-content {
+        }
+
+        /* Estilo para la tabla */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    background-color: #007bff; /* Color de fondo para el encabezado */
+    color: #fff; /* Color del texto en el encabezado */
+}
+
+.table tbody + tbody {
+    border-top: 2px solid #dee2e6;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 123, 255, 0.05); /* Color de fondo para filas impares */
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Color de fondo al pasar el ratón sobre una fila */
+}
+/* Estilo adicional para el input de búsqueda */
+.form-control {
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+    </style>
+</head>
+<body>
+
+<!-- Contenedor principal -->
+<div class="container-fluid mt-5">
+    <h2 class="text-center">Administración General</h2>
+
+    <!-- Pestañas para cambiar entre los contenedores -->
+    <ul class="nav nav-tabs" id="myTabs">
+        <li class="nav-item">
+            <a class="nav-link active" id="agregarDoctores-tab" data-toggle="tab" href="#agregarDoctores">Agregar Doctores</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="crearCuenta-tab" data-toggle="tab" href="#crearCuenta">Crear Cuenta de Doctor Administrador</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="verLista-tab" data-toggle="tab" href="#verLista">Ver Lista de Doctores Administradores</a>
+        </li>
+    </ul>
+
+    <!-- Contenido de las pestañas -->
+    <div class="tab-content mt-3">
+        <!-- Contenido de la pestaña "Agregar Doctores" -->
+        <div class="tab-pane fade show active" id="agregarDoctores">
+            <form id="doctorForm">
+    <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" required maxlength="50">
+    </div>
+    <div class="form-group">
+        <label for="paterno">Apellido Paterno:</label>
+        <input type="text" class="form-control" id="paterno" name="paterno" required maxlength="50">
+    </div>
+    <div class="form-group">
+        <label for="materno">Apellido Materno:</label>
+        <input type="text" class="form-control" id="materno" name="materno" required maxlength="50">
+    </div>
+    <div class="form-group">
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" class="form-control" id="telefono" name="telefono" required maxlength="10">
+        <small>Ingrese un número de teléfono válido (10 dígitos numéricos).</small>
+    </div>
+    <div class="form-group">
+        <label for="especialidad">Especialidad:</label>
+        <input type="text" class="form-control" id="especialidad" name="especialidad" required maxlength="100">
+    </div>
+    <div class="form-group">
+        <label for="fnac">Fecha de Nacimiento:</label>
+        <input type="date" class="form-control" id="fnac" name="fnac" required>
+    </div>
+    <div class="form-group">
+        <label for="usuario">Usuario:</label>
+        <input type="text" class="form-control" id="usuario" name="usuario" required maxlength="10">
+    </div>
+    <!-- Botón para guardar los datos y mostrarlos en el contenedor -->
+                <button type="button" class="btn btn-success" id="guardar">Agregar Doctor</button>
+
+</form>
+        </div>
+
+        <!-- Contenido de la pestaña "Crear Cuenta de Doctor Administrador" -->
+        <div class="tab-pane fade" id="crearCuenta">
+            <form id="cuentaForm">
+    <div class="form-group">
+        <label for="doctorList">Seleccione un Doctor:</label>
+        <select class="form-control" id="doctorList" name="doctorList" required>
+            <!-- Opciones del select se llenarán dinámicamente desde el servidor -->
+        </select>
+    </div>
+    <div class="form-group">
+    <label for="usuario2">Usuario:</label>
+    <input type="text" class="form-control" id="usuario2" name="usuario" required disabled>
+</div>
+    <div class="form-group">
+        <label for="password">Contraseña:</label>
+        <input type="password" class="form-control" id="password" name="password" required minlength="8">
+        <small>La contraseña debe tener al menos 8 caracteres.</small>
+    </div>
+    <div class="form-group">
+        <label for="confirmPassword">Confirmar Contraseña:</label>
+        <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required minlength="8">
+        <small>La contraseña debe tener al menos 8 caracteres.</small>
+    </div>
+    <div class="form-group">
+        <label for="captcha">Captcha:</label>
+        <div id="captchaContainer"></div>
+        <input type="text" class="form-control" id="captchaInput" name="captcha" required>
+        <small>Ingresa el código captcha mostrado.</small>
+    </div>
+    <!-- Botón para guardar los datos y mostrarlos en el contenedor -->
+    <button type="button" class="btn btn-success" id="guardarCuenta">Crear Cuenta</button>
+</form>
+        </div>
+
+        <!-- Contenido de la pestaña "Ver Lista de Doctores Administradores" -->
+<div class="tab-pane fade" id="verLista">
+    <h3>Lista de Doctores Administradores</h3>
+
+    <!-- Barra de búsqueda mejorada -->
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" id="searchInput" placeholder="Buscar..." oninput="searchFunction()">
+      </div>
+      
+    <div class="table-responsive">
+        <table id="doctoresTable" class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido Paterno</th>
+                    <th>Apellido Materno</th>
+                    <th>Usuario</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="../script/adminGeneral.js"></script>
+</body>
+</html>
