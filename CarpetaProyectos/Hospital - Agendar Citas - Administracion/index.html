@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital General ITCV</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <img id="background-image" src="img/fondo.jpg" alt="Fondo Difuminado">
+<div class="navbar-container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <img src="img/logo.png" alt="Hospital Logo" class="d-inline-block align-top logo">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#conocenos">Conócenos</a>
+        </li>
+        <li class= "nav-item">
+          <a class="nav-link" href="#especialidades">Especialidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#especialistas">Especialistas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#estadisticas">Estadísticas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contactos">Contactos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="html/Citas.html">Citas</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<br><br><br><br><br>
+
+<div id="carouselExample" class="carousel slide custom-carousel" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExample" data-slide-to="1"></li>
+    <li data-target="#carouselExample" data-slide-to="2"></li>
+    <li data-target="#carouselExample" data-slide-to="3"></li>
+    <li data-target="#carouselExample" data-slide-to="4"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/carrusel1.png" class="d-block w-100" alt="Imagen 1">
+      <div class="carousel-caption">
+        <h3>Maternidad</h3>
+        <br>
+<p>El Hospital General ITCV brinda atención especializada en maternidad para asegurar la salud de madres y bebés durante el embarazo, parto y postparto.</p>
+<br>
+<p id="fechaimg">5 de julio de 2023</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/carrusel2.png" class="d-block w-100" alt="Imagen 2">
+      <div class="carousel-caption">
+        <h3>Internados</h3>
+        <br>
+<p>En el Hospital General ITCV, ofrecemos servicios de internado de alta calidad para garantizar la recuperación y atención médica de nuestros pacientes.</p>
+<br>
+<p id="fechaimg">10 de noviembre de 2022</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/carrusel3.jpg" class="d-block w-100" alt="Imagen 3">
+      <div class="carousel-caption">
+        <h3>Camillas</h3>
+        <br>
+<p>Nuestras modernas camillas en el Hospital General ITCV están diseñadas para brindar comodidad y seguridad a nuestros pacientes durante su estancia.</p>
+<br>
+<p id="fechaimg">14 de abril de 2023</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/carrusel4.jpg" class="d-block w-100" alt="Imagen 4">
+      <div class="carousel-caption">
+        <h3>Equipo Médico</h3>
+        <br>
+<p>Contamos con un equipo médico altamente calificado en el Hospital General ITCV, listo para brindar atención de calidad a nuestros pacientes.</p>
+<br>
+<p id="fechaimg">22 de septiembre de 2022</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/carrusel5.png" class="d-block w-100" alt="Imagen 5">
+      <div class="carousel-caption">
+        <h3>Personal Capacitado</h3>
+        <br>
+<p>En el Hospital General ITCV, nuestro personal capacitado se esfuerza por brindar atención de primera clase a cada paciente, en todo momento.</p>
+<br>
+<p id="fechaimg">7 de diciembre de 2022</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="container-fluid mt-4">
+  <div class="row">
+    <div class="col custom-container">
+      <h2 class="mb-4" id="conocenos">Conócenos</h2>
+        <p>
+          El Hospital General ITCV es una institución de atención médica líder comprometida con el bienestar y la salud de la comunidad. Nuestra misión es brindar servicios de atención médica de alta calidad y accesibles para todas las personas que confían en nosotros.
+        </p>
+        <p>
+          Contamos con un equipo de profesionales médicos altamente capacitados, modernas instalaciones y equipos de vanguardia para garantizar un diagnóstico preciso y un tratamiento efectivo. Nos enorgullece ofrecer una amplia gama de especialidades médicas y servicios para satisfacer las necesidades de nuestros pacientes.
+        </p>
+        <p>
+          Nuestro compromiso es proporcionar un entorno cálido y acogedor para nuestros pacientes, donde se sientan seguros y respaldados en cada paso de su atención médica. Valoramos la confianza que depositan en nosotros y trabajamos incansablemente para mantener los más altos estándares de atención médica.
+        </p>
+        <p id="ultimoP">
+          Agradecemos la oportunidad de servir a nuestra comunidad y estamos comprometidos con la excelencia en la atención médica. Si tiene alguna pregunta o necesita nuestros servicios, no dude en ponerse en contacto con nosotros. Estamos aquí para ayudarle.
+        </p>
+    </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid mt-4">
+  <div class="row">
+    <!-- Contenedor de "Especialidades" sin número -->
+    <div class="col-lg-6">
+  <div class="custom-container-vertical">
+    <h2 class="mb-4" id="especialidades">Especialidades</h2>
+  <div class="especialidades-container">
+    <!-- Especialidad 1 -->
+    <div class="especialidad card">
+      <br><br><br>
+      <img src="img/urgencias.png" alt="" class="especialidad-img">
+      <p class="card__title" id="ultimoP2">Urgencias</p>
+    </div>
+    <!-- Especialidad 2 -->
+    <div class="especialidad card">
+      <img src="img/cardiologia.png" alt="" class="especialidad-img">
+      <p class="card__title">Cardiología</p>
+    </div>
+    <!-- Especialidad 3 -->
+    <div class="especialidad card">
+      <img src="img/medicina.png" alt="" class="especialidad-img">
+      <p class="card__title">Medicina</p>
+    </div>
+      <!-- Especialidad 4 -->
+      <div class="especialidad card">
+        <img src="img/cirugia.png" alt="" class="especialidad-img">
+         <p class="card__title">Cirugía</p>
+      </div>
+      <!-- Especialidad 5 -->
+      <div class="especialidad card">
+        <img src="img/traumotologia.png" alt="" class="especialidad-img">
+         <p class="card__title">Traumotología</p>
+      </div>
+      <!-- Especialidad 6 -->
+      <div class="especialidad card">
+        <img src="img/interno.png" alt="" class="especialidad-img">
+         <p class="card__title">Internados</p>
+      </div>
+      <!-- Especialidad 7 -->
+      <div class="especialidad card">
+        <img src="img/oncologia.png" alt="" class="especialidad-img">
+         <p class="card__title">Oncología</p>
+      </div>
+      <!-- Especialidad 8 -->
+      <div class="especialidad card">
+        <img src="img/pediatria.png" alt="" class="especialidad-img">
+         <p class="card__title">Pediatría</p>
+      </div>
+      <!-- Especialidad 9 -->
+<div class="especialidad card">
+  <img src="img/neurologia.png" alt="" class="especialidad-img">
+  <p class="card__title">Neurología</p>
+</div>
+
+<!-- Especialidad 10 -->
+<div class="especialidad card">
+  <img src="img/reumatologia.png" alt="" class="especialidad-img">
+  <p class="card__title">Reumatología</p>
+</div>
+<!-- Especialidad 11 -->
+<div class="especialidad card">
+  <img src="img/dermatologia.png" alt="" class="especialidad-img">
+  <p class="card__title">Dermatología</p>
+</div>
+
+<!-- Especialidad 12 -->
+<div class="especialidad card">
+  <img src="img/nefrologia.png" alt="" class="especialidad-img">
+  <p class="card__title">Nefrología</p>
+</div>
+<!-- Especialidad 13 -->
+<div class="especialidad card">
+  <img src="img/endocrinologia.png" alt="" class="especialidad-img">
+  <p class="card__title">Endocrinología</p>
+</div>
+
+<!-- Especialidad 14 -->
+<div class="especialidad card">
+  <img src="img/oftalmologia.png" alt="" class="especialidad-img">
+  <p class="card__title">Oftalmología</p>
+</div>
+      <!-- Agrega más especialidades aquí -->
+    </div>
+  </div>
+</div>
+    <!-- Contenedores de "Estadísticas" y "Especialistas"-->
+    <div class="col-lg-6" id="contenedoresH">
+
+  <div class="custom-container-horizontal">
+    <h2 class="mb-4" id="especialistas">Especialistas Destacados</h2>
+    <div class="especialista-container">
+
+      <!-- Especialidad 1 -->
+      <div class="card-client especialista">
+        <div class="user-picture">
+          <img src="img/especialista1.png" alt="" class="especialista-img">
+        </div>
+        <p class="name-client"><span class="color-esp1">Cardiología</span><br>Arturo Pérez</p>
+      </div>
+
+    <!-- Especialidad 2 -->
+      <div class="card-client especialista">
+        <div class="user-picture">
+          <img src="img/especialista2.png" alt="" class="especialista-img">
+        </div>
+        <p class="name-client"><span class="color-esp2">Neurología</span><br>Juan García</p>
+      </div>
+
+      <!-- Especialidad 3 -->
+      <div class="card-client especialista">
+        <div class="user-picture">
+          <img src="img/especialista3.png" alt="" class="especialista-img">
+        </div>
+        <p class="name-client"><span class="color-esp3">Dermatología</span><br>Diana García</p>
+      </div>
+
+      <!-- Especialidad 4 -->
+      <div class="card-client especialista">
+        <div class="user-picture">
+          <img src="img/especialista4.png" alt="" class="especialista-img">
+        </div>
+        <p class="name-client"><span class="color-esp4">Ginecólogo</span><br>Carlos Hernández</p>
+      </div>
+
+      <!-- Especialidad 5 -->
+      <div class="card-client especialista">
+        <div class="user-picture">
+          <img src="img/especialista5.png" alt="" class="especialista-img">
+        </div>
+        <p class="name-client"><span class="color-esp5">Pediatría</span><br>Pedro López</p>
+      </div>
+
+      <!-- Especialidad 6 -->
+      <div class="card-client especialista">
+        <div class="user-picture">
+          <img src="img/especialista7.png" alt="" class="especialista-img">
+        </div>
+        <p class="name-client" id="ultimoP"><span class="color-esp6">Médico Cirujano</span><br>Sandra Torres</p>
+      </div>
+  </div>
+</div>
+<br>
+
+      <div class="custom-container-horizontal">
+        <h2 class="mb-1" id="estadisticas">Estadísticas</h2>
+
+<div>
+    <h3>Estadísticas: Recursos Del Hospital</h2>
+    <canvas id="chart2"></canvas>
+</div>
+
+        <div>
+    <h3>Estadísticas: Pacientes</h2>
+    <canvas id="chart1"></canvas>
+</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid mt-4">
+  <div class="row">
+    <div class="col custom-container">
+      <h2 class="mb-4" id="contactos">Localización Del Hospital General ITCV</h2>
+      <p>
+        El Hospital General ITCV es una institución de atención médica líder comprometida con el bienestar y la salud de la comunidad. Nuestra misión es brindar servicios de atención médica de alta calidad y accesibles para todas las personas que confían en nosotros.
+      </p>
+      <div class="contenedormapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.8284270565505!2d-99.16930292545524!3d23.75349697866826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8679536a85e7e993%3A0x4f3aa45ef6847f44!2sTecnol%C3%B3gico%20Nacional%20de%20M%C3%A9xico%20Campus%20Cd.%20Victoria!5e0!3m2!1ses-419!2smx!4v1697792572233!5m2!1ses-419!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <br>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 contactos">
+        <h4>Contactos</h4>
+        <ul>
+          <li>Teléfono: (123) 456-7890</li>
+          <li>Correo electrónico: info@hospitalitcv.com</li>
+          <li>Dirección: Calle Principal #123, Ciudad</li>
+        </ul>
+      </div>
+      <div class="col-6 paginas-web">
+        <h4>Páginas Web del Hospital</h4>
+        <div class="web-images">
+        <a href="https://www.facebook.com/TECNM.ITVICTORIA" target="_blank"><img src="img/logofacebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/tecnm_cd.victoria/" target="_blank"><img src="img/logoinsta.png" alt="Instagram"></a>
+        <a href="https://twitter.com/TecNMCdVictoria" target="_blank"><img src="img/logotwitter.png" alt="Twitter"></a>
+        <a href="https://www.youtube.com/@tecnmcdvictoria2448/featured" target="_blank"><img src="img/logoyoutube.png" alt="YouTube"></a>
+        <br><br>
+        <p><strong>Derechos de autor:</strong> Luis TR</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script/graficas.js"></script>
+</body>
+</html>
