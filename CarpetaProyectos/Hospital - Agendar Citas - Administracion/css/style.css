@@ -1,0 +1,476 @@
+#background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Coloca la imagen detrás de todo el contenido */
+  filter: blur(5px); /* Aplica el efecto de difuminado a la imagen */
+}
+
+/* Estilo de la barra de navegación */
+.navbar-container {
+  background-color: #ffffff;
+  border: 3px solid #1e81b0;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  z-index: 100;
+  transition: top 0.3s; /* Cambiamos de "top" a "bottom" */
+  width: 99.2%;
+  position: fixed;
+  top: 0; /* Cambiamos "top" a "bottom" */
+  left: 5px;
+  right: 0px;
+  box-sizing: border-box;
+}
+
+/* Estilo de la imagen del logotipo */
+.logo {
+  max-width: 200px;
+  margin-right: 150px;
+}
+
+/* Estilo de los elementos de navegación */
+.navbar-nav .nav-item {
+  margin-right: 25px;
+}
+
+
+
+
+
+/*Diseño del carrusel de fotos*/
+.custom-carousel {
+  max-height: 510px; /* Ajusta esta altura según tus necesidades */
+  overflow: hidden; /* Evita que las imágenes se desborden */
+  border: 3px solid #1e81b0;
+  border-radius: 25px;
+  margin: 5px; /* Elimina el margen */
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /* Agregar sombreado */
+
+}
+
+.custom-carousel .carousel-inner {
+  max-height: 100%; /* Asegura que el carrusel llene la altura máxima */
+  position: relative;i
+}
+
+.custom-carousel .carousel-item {
+  height: 100%; /* Hace que las imágenes ocupen toda la altura del carrusel */
+}
+
+
+  .carousel-caption {
+    position: absolute;
+    bottom: 10px; /* Ajusta la posición vertical según tus necesidades */
+    right: 10px; /* Ajusta la posición horizontal según tus necesidades */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para hacer el texto más legible */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado interior del contenedor */
+    border-radius: 25px; /* Bordes redondeados para el contenedor */
+    margin: 200px;
+  }
+
+  #fechaimg{
+    text-align: right;
+  }
+
+
+
+
+
+
+
+
+
+
+
+/* Descripción del hospital */
+.custom-container {
+      background-color: #ffffff;
+      border: 3px solid #1e81b0;
+      border-radius: 25px;
+      margin: 5px; /* Elimina el margen */
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /* Agregar sombreado */
+    }
+
+    .custom-container h2 {
+      font-size: 35px;
+      color: #333;
+      padding-left: 150px;
+     padding-top: 100px;
+    }
+
+    .custom-container p {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 30px;
+      padding-left: 150px;
+      padding-right: 150px;
+    }
+    #ultimoP{
+      padding-bottom: 100px;
+    }
+    #ultimoP2{
+      padding-bottom: 87px;
+    }
+
+    #conocenos{
+  color: #1b71b3;
+}
+
+
+
+
+
+
+
+  /* Contenedor de "Especialidades" sin número */
+.custom-container-vertical {
+  background-color: #ffffff;
+  border: 3px solid #1e81b0;
+  border-radius: 0 25px 25px 0;
+  padding: 25px;
+  margin-left: -10px;
+  margin-right: 150px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /* Agregar sombreado */
+  padding-bottom: 12px;
+}
+
+.custom-container-vertical h2 {
+  text-align: center;
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 30px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+/* Contenedores de "Especialidades 1", "Especialidades 2" y "Especialidades 3" con guiones */
+.custom-container-horizontal {
+  background-color: #ffffff;
+  border: 3px solid #1e81b0;
+  border-radius: 25px;
+  padding: 25px;
+  margin-left: -175px; /* Elimina el margen */
+  margin-right: -10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /* Agregar sombreado */
+}
+
+.custom-container-horizontal h2 {
+  text-align: center;
+  font-size: 26px;
+  color: #333;
+  padding-top: 100px;
+}
+
+.custom-container-horizontal h3 {
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+  padding-top: 65px;
+}
+
+li{
+  font-size: 18px;
+}
+
+span{
+  float: right;
+}
+
+
+
+
+
+
+
+
+
+/* Imágenes dentro del contenedor de "Especialidades" */
+#especialidades{
+  color: #1b71b3;
+}
+
+.especialidad-img {
+  width: 120px; /* Ajusta el tamaño según tus necesidades */
+  height: 120px;
+  margin: 0 auto; /* Centra las imágenes horizontalmente */
+  display: block;
+}
+
+/* Estilos para el contenedor de las especialidades */
+.especialidades-container {
+  display: flex;
+  flex-wrap: wrap; /* Hace que las especialidades se ajusten en varias filas */
+  justify-content: space-between; /* Espacio entre las especialidades */
+  gap: 20px; /* Espacio entre las especialidades */
+}
+
+/* Estilos para el nombre de las especialidades */
+.especialidad p {
+  text-align: center; /* Centra el texto */
+  margin-right: 10px; /* Espacio entre la imagen y el nombre */
+}
+
+
+
+
+
+
+/* Imágenes dentro del contenedor de "Especialistas" */
+
+#especialistas{
+  color: #1b71b3;
+}
+
+
+.especialista-img {
+  width: 125px; /* Ajusta el tamaño según tus necesidades */
+  height: 125px;
+  border-radius: 50%; /* Hace que las imágenes sean circulares */
+  border: 3px solid #1e81b0; /* Borde circular */
+  margin: 0 auto; /* Centra las imágenes horizontalmente */
+  display: block;
+}
+
+/* Estilos para el contenedor de los Especialistas */
+.especialista-container {
+  display: flex;
+  flex-wrap: wrap; /* Hace que las especialidades se ajusten en varias filas */
+  justify-content: space-between; /* Espacio entre las especialidades */
+  gap: 20px; /* Espacio entre los Especialistas */
+}
+
+/* Estilos para el nombre de los Especialistas */
+.especialista p {
+  text-align: center; /* Centra el texto */
+  margin: 10px 0; /* Espacio entre la imagen y el nombre */
+}
+
+#estadisticas{
+  color: #1b71b3;
+}
+
+.contenedormapa {
+  border: 1px solid #1e81b0;
+  border-radius: 30px;
+  overflow: hidden; /* Para ocultar bordes adicionales del mapa */
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+#contactos{
+  color: #1b71b3;
+}
+
+
+
+
+
+
+
+
+
+.footer {
+  background-color: #dfd8d6;
+  padding: 20px 0;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.contactos h4,
+.paginas-web h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contactos ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contactos ul li {
+}
+
+.paginas-web .web-images img {
+  max-width: 40px;
+  margin-right: 10px;
+}
+
+.paginas-web .web-images img:last-child {
+  margin-right: 0;
+}
+
+
+
+
+
+
+
+/*DISEÑO FINAL DE TARJETAS CON ANIMACIONES (ESPECIALIDADES)*/
+.especialidades-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .especialidad {
+      margin: 20px;
+      /* Agrega más estilos según sea necesario */
+    }
+
+    /* El CSS para el diseño de tarjeta */
+    .card {
+      position: relative;
+      width: 187px;
+      height: 187px;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      perspective: 1000px;
+      transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .card svg {
+      fill: #000;
+      transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      border-radius: 3px;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px #000000;
+      background-color: #f2f2f2;
+      color: #ffffff;
+    }
+
+    .card__content {
+      color: #000000;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      background-color: #f2f2f2;
+      transform: rotateX(-90deg);
+      transform-origin: bottom;
+      transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .card:hover .card__content {
+      transform: rotateX(0deg);
+    }
+
+    .card__title {
+      margin: 0;
+      padding-left: 5px;
+      font-size: 24px;
+      color: #000000;
+      font-weight: 700;
+    }
+
+    .card:hover svg {
+      scale: 0;
+    }
+
+    .card__description {
+      margin: 10px 0 0;
+      font-size: 14px;
+      color: #000000;
+      line-height: 1.4;
+    }
+
+
+
+
+
+
+
+
+/*DISEÑO FINAL DE TARJETAS CON ANIMACIONES (ESPECIALISTAS)*/
+.card-client {89
+  background: white;
+  width: 13rem;
+  height: 15rem; /* Altura fija */
+  padding: 25px 20px;
+  border: 4px solid #1e81b0;
+  box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
+  border-radius: 10px;
+  text-align: center;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.card-client:hover {
+  transform: translateY(-15px);
+}
+
+.user-picture {
+  text-align: center;
+  overflow: hidden;
+  object-fit: cover;
+  width: 8.5rem;
+  height: 8.5rem;
+  border: 4px solid #1e81b0;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.user-picture svg {
+  width: 2.5rem;
+  fill: currentColor;
+}
+
+.name-client {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center; /* Añadido para centrar el contenido */
+}
+
+.color-esp1 {
+    color: #1e81b0; /* Puedes cambiar "red" al color que desees */
+    padding-right: 30px;
+  }
+
+.color-esp2 {
+    color: #1e81b0; /* Puedes cambiar "red" al color que desees */
+    padding-right: 32px;
+  }
+
+.color-esp3 {
+    color: #1e81b0; /* Puedes cambiar "red" al color que desees */
+    padding-right: 22px;
+  }
+
+.color-esp4 {
+    color: #1e81b0; /* Puedes cambiar "red" al color que desees */
+    padding-right: 32px;
+  }
+
+.color-esp5 {
+    color: #1e81b0; /* Puedes cambiar "red" al color que desees */
+    padding-right: 42px;
+  }
+
+.color-esp6 {
+    color: #1e81b0; /* Puedes cambiar "red" al color que desees */
+    padding-right: 10px;
+  }

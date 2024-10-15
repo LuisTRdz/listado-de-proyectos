@@ -1,0 +1,104 @@
+#background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Coloca la imagen detrás de todo el contenido */
+  filter: blur(5px); /* Aplica el efecto de difuminado a la imagen */
+}
+
+/* Estilo de la barra de navegación */
+.navbar-container {
+  background-color: #ffffff;
+  border: 3px solid #1e81b0;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  z-index: 100;
+  transition: top 0.3s; /* Cambiamos de "top" a "bottom" */
+  width: 99.2%;
+  position: fixed;
+  top: 0; /* Cambiamos "top" a "bottom" */
+  left: 5px;
+  right: 0px;
+  box-sizing: border-box;
+}
+
+/* Estilo de la imagen del logotipo */
+.logo {
+  max-width: 200px;
+  margin-right: 150px;
+}
+
+/* Estilo de los elementos de navegación */
+.navbar-nav .nav-item {
+  margin-right: 25px;
+}
+
+a{
+  font-size: 18px;
+}
+
+
+/* Estilos personalizados */
+        .rounded-container {
+          background-color: white;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+            border: 3px solid #1e81b0;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            min-height: 400px; /* Altura mínima fija para los contenedores */
+        }
+
+#tituloForm{
+  text-align: center;
+}
+
+/* Estilo para campos deshabilitados */
+.disabled-field {
+    background-color: #f2f2f2; /* Fondo gris claro */
+    color: #808080; /* Texto gris */
+    pointer-events: none; /* Deshabilitar eventos del mouse */
+}
+
+input {
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: #ccc;
+  box-shadow: inset 5px 5px 15px rgba(0,0,0,0.3);
+  transition: 300ms ease-in-out;
+}
+
+input:focus {
+  background-color: white;
+  transform: scale(1.02);
+  box-shadow: 13px 13px 100px #969696,
+             -13px -13px 100px #ffffff;
+}
+
+
+button {
+  border: none;
+  border-radius: 8px;
+  width: 100px;
+  height: 45px;
+  transition: .3s;
+}
+
+button:hover {
+  box-shadow: 0 0 0 3px black;
+}
+
+#btnsNav button {
+  margin-right: 10px; /* Ajusta el valor según tus necesidades */
+}
+
+#btnsNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
