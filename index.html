@@ -8,24 +8,61 @@
     <style>
         body {
             padding-top: 56px;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f5f5f5;
         }
         .header {
-            background-color: #f8f9fa;
-            padding: 20px;
+            background-color: #ffffff;
+            padding: 40px;
             text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
         .section {
-            margin: 40px 0;
+            margin: 60px 0;
         }
         footer {
-            background-color: #f8f9fa;
+            background-color: #ffffff;
             padding: 20px 0;
+            box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
         }
         .card {
-            transition: transform 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 5px; /* Ajusta el margen */
         }
         .card:hover {
-            transform: scale(1.05);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+        .carousel-item {
+            padding: 10px; /* Reduce el padding */
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 50px; /* Ancho de las flechas */
+            top: 50%; /* Centrado verticalmente */
+            transform: translateY(-50%); /* Ajustar la posición */
+            margin-left: -40px; /* Mover a la izquierda */
+            margin-right: -40px; /* Mover a la derecha */
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: transparent; /* Sin fondo */
+            border: 2px solid rgba(0, 123, 255, 0.9); /* Borde azul */
+            border-radius: 50%; /* Redondear */
+            width: 30px; /* Tamaño de la flecha */
+            height: 30px; /* Tamaño de la flecha */
+        }
+        .carousel-control-prev-icon::before,
+        .carousel-control-next-icon::before {
+            font-size: 20px; /* Tamaño de la flecha */
+            color: rgba(0, 123, 255, 0.9); /* Color de la flecha */
+        }
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            background-color: rgba(0, 123, 255, 0.1); /* Fondo al pasar el puntero */
         }
     </style>
 </head>
@@ -38,21 +75,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#about">Acerca de mí</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Proyectos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">Habilidades</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#experience">Experiencia</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contacto</a>
-                </li>
+                <li class="nav-item active"><a class="nav-link" href="#about">Acerca de mí</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experiencia</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -66,7 +93,6 @@
         <div id="about" class="section">
             <h2>Acerca de mí</h2>
             <p>Hola, soy [Tu Nombre]. Soy un apasionado del desarrollo web y me gusta crear proyectos que resuelvan problemas reales. Tengo experiencia en diversas tecnologías y disfruto aprender constantemente.</p>
-            <p>En este blog, compartiré mis pensamientos, tutoriales y proyectos personales. ¡Espero que lo disfrutes!</p>
         </div>
 
         <div id="projects" class="section">
@@ -80,8 +106,9 @@
                                     <img src="img/hospital.jpg" class="card-img-top" alt="HospitalITCV">
                                     <div class="card-body">
                                         <h5 class="card-title">Proyecto - Hospital</h5>
-                                        <p class="card-text">Página Web para un hospital en el que se puede visualizar información, generar citas y por parte del personal, administrarlas y consultarlas.</p>
-                                        <a href="enlace_a_proyecto1.html" class="btn btn-primary">Ver Proyecto</a>
+                                        <p class="card-text">Página web para observar información, generar citas y administrarlas.</p>
+                                        <a href="CarpetaProyectos/Hospital - Agendar Citas - Administracion/HOSPITAL/index.html" class="btn btn-primary">Ver Proyecto</a>
+                                        <a href="acerca_del_proyecto.html" class="btn btn-secondary">Acerca del Proyecto</a>
                                     </div>
                                 </div>
                             </div>
@@ -92,6 +119,7 @@
                                         <h5 class="card-title">Proyecto 2</h5>
                                         <p class="card-text">Descripción breve del Proyecto 2.</p>
                                         <a href="enlace_a_proyecto2.html" class="btn btn-primary">Ver Proyecto</a>
+                                        <a href="acerca_del_proyecto2.html" class="btn btn-secondary">Acerca del Proyecto</a>
                                     </div>
                                 </div>
                             </div>
@@ -102,6 +130,7 @@
                                         <h5 class="card-title">Proyecto 3</h5>
                                         <p class="card-text">Descripción breve del Proyecto 3.</p>
                                         <a href="enlace_a_proyecto3.html" class="btn btn-primary">Ver Proyecto</a>
+                                        <a href="acerca_del_proyecto3.html" class="btn btn-secondary">Acerca del Proyecto</a>
                                     </div>
                                 </div>
                             </div>
@@ -116,6 +145,7 @@
                                         <h5 class="card-title">Proyecto 4</h5>
                                         <p class="card-text">Descripción breve del Proyecto 4.</p>
                                         <a href="enlace_a_proyecto4.html" class="btn btn-primary">Ver Proyecto</a>
+                                        <a href="acerca_del_proyecto4.html" class="btn btn-secondary">Acerca del Proyecto</a>
                                     </div>
                                 </div>
                             </div>
@@ -126,6 +156,7 @@
                                         <h5 class="card-title">Proyecto 5</h5>
                                         <p class="card-text">Descripción breve del Proyecto 5.</p>
                                         <a href="enlace_a_proyecto5.html" class="btn btn-primary">Ver Proyecto</a>
+                                        <a href="acerca_del_proyecto5.html" class="btn btn-secondary">Acerca del Proyecto</a>
                                     </div>
                                 </div>
                             </div>
@@ -136,6 +167,7 @@
                                         <h5 class="card-title">Proyecto 6</h5>
                                         <p class="card-text">Descripción breve del Proyecto 6.</p>
                                         <a href="enlace_a_proyecto6.html" class="btn btn-primary">Ver Proyecto</a>
+                                        <a href="acerca_del_proyecto6.html" class="btn btn-secondary">Acerca del Proyecto</a>
                                     </div>
                                 </div>
                             </div>
@@ -150,6 +182,7 @@
                                         <h5 class="card-title">Proyecto 7</h5>
                                         <p class="card-text">Descripción breve del Proyecto 7.</p>
                                         <a href="enlace_a_proyecto7.html" class="btn btn-primary">Ver Proyecto</a>
+                                        <a href="acerca_del_proyecto7.html" class="btn btn-secondary">Acerca del Proyecto</a>
                                     </div>
                                 </div>
                             </div>
@@ -160,6 +193,7 @@
                                         <h5 class="card-title">Proyecto 8</h5>
                                         <p class="card-text">Descripción breve del Proyecto 8.</p>
                                         <a href="enlace_a_proyecto8.html" class="btn btn-primary">Ver Proyecto</a>
+                                        <a href="acerca_del_proyecto8.html" class="btn btn-secondary">Acerca del Proyecto</a>
                                     </div>
                                 </div>
                             </div>
@@ -191,7 +225,7 @@
         <div id="experience" class="section">
             <h2>Experiencia</h2>
             <h5>[Tu Cargo] en [Tu Empresa]</h5>
-            <p>Descripción breve de tu rol, responsabilidades y logros. Incluye fechas y tecnologías utilizadas.</p>
+            <p>Descripción breve de tu rol, responsabilidades y logros.</p>
             <h5>[Tu Cargo Anterior] en [Tu Empresa Anterior]</h5>
             <p>Descripción breve de tu rol, responsabilidades y logros.</p>
         </div>
@@ -227,7 +261,7 @@
         <p>&copy; 2024 [Tu Nombre]. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
