@@ -41,11 +41,10 @@ body {
 
 /* Contenedores */
 .custom-container {
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
+    /* Elimina el fondo y borde */
     padding: 20px;
     margin: 20px 0; /* Mantiene el margen inferior */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: none; /* Quita la sombra */
 }
 
 .custom-container-vertical {
@@ -65,7 +64,7 @@ body {
 }
 
 .especialidad, .especialista {
-    background: #f8f9fa;
+    background: #f8f9fa; /* Mantiene el fondo claro para las tarjetas */
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 10px;
