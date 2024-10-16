@@ -2,9 +2,8 @@
   #mycontainer {    
          width: 400px;
   }
-}
 
-#background-image {
+  #background-image {
   position: fixed;
   top: 0;
   left: 0;
@@ -480,3 +479,4 @@ span{
     color: #1e81b0; /* Puedes cambiar "red" al color que desees */
     padding-right: 10px;
   }
+}
