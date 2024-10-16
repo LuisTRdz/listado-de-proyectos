@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog Personal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        .header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+        .section {
+            margin: 40px 0;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+        .card {
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Mi Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about">Acerca de mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experiencia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>Bienvenido a mi blog personal</h1>
+        <p>Explora mis proyectos y conoce más sobre mí</p>
+    </header>
+
+    <div class="container">
+        <div id="about" class="section">
+            <h2>Acerca de mí</h2>
+            <p>Hola, soy [Tu Nombre]. Soy un apasionado del desarrollo web y me gusta crear proyectos que resuelvan problemas reales. Tengo experiencia en diversas tecnologías y disfruto aprender constantemente.</p>
+            <p>En este blog, compartiré mis pensamientos, tutoriales y proyectos personales. ¡Espero que lo disfrutes!</p>
+        </div>
+
+        <div id="projects" class="section">
+            <h2>Proyectos</h2>
+            <div id="projectCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="img/hospital.jpg" class="card-img-top" alt="HospitalITCV">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Proyecto - Hospital</h5>
+                                        <p class="card-text">Página Web para un hospital en el que se puede visualizar información, generar citas y por parte del personal, administrarlas y consultarlas.</p>
+                                        <a href="enlace_a_proyecto1.html" class="btn btn-primary">Ver Proyecto</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="proyecto2.jpg" class="card-img-top" alt="Proyecto 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Proyecto 2</h5>
+                                        <p class="card-text">Descripción breve del Proyecto 2.</p>
+                                        <a href="enlace_a_proyecto2.html" class="btn btn-primary">Ver Proyecto</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="proyecto3.jpg" class="card-img-top" alt="Proyecto 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Proyecto 3</h5>
+                                        <p class="card-text">Descripción breve del Proyecto 3.</p>
+                                        <a href="enlace_a_proyecto3.html" class="btn btn-primary">Ver Proyecto</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="proyecto4.jpg" class="card-img-top" alt="Proyecto 4">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Proyecto 4</h5>
+                                        <p class="card-text">Descripción breve del Proyecto 4.</p>
+                                        <a href="enlace_a_proyecto4.html" class="btn btn-primary">Ver Proyecto</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="proyecto5.jpg" class="card-img-top" alt="Proyecto 5">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Proyecto 5</h5>
+                                        <p class="card-text">Descripción breve del Proyecto 5.</p>
+                                        <a href="enlace_a_proyecto5.html" class="btn btn-primary">Ver Proyecto</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="proyecto6.jpg" class="card-img-top" alt="Proyecto 6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Proyecto 6</h5>
+                                        <p class="card-text">Descripción breve del Proyecto 6.</p>
+                                        <a href="enlace_a_proyecto6.html" class="btn btn-primary">Ver Proyecto</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="proyecto7.jpg" class="card-img-top" alt="Proyecto 7">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Proyecto 7</h5>
+                                        <p class="card-text">Descripción breve del Proyecto 7.</p>
+                                        <a href="enlace_a_proyecto7.html" class="btn btn-primary">Ver Proyecto</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="proyecto8.jpg" class="card-img-top" alt="Proyecto 8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Proyecto 8</h5>
+                                        <p class="card-text">Descripción breve del Proyecto 8.</p>
+                                        <a href="enlace_a_proyecto8.html" class="btn btn-primary">Ver Proyecto</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#projectCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#projectCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="skills" class="section">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Frameworks: Bootstrap, React</li>
+                <li>Backend: Node.js, Express</li>
+                <li>Base de datos: MongoDB, MySQL</li>
+                <li>Control de versiones: Git</li>
+            </ul>
+        </div>
+
+        <div id="experience" class="section">
+            <h2>Experiencia</h2>
+            <h5>[Tu Cargo] en [Tu Empresa]</h5>
+            <p>Descripción breve de tu rol, responsabilidades y logros. Incluye fechas y tecnologías utilizadas.</p>
+            <h5>[Tu Cargo Anterior] en [Tu Empresa Anterior]</h5>
+            <p>Descripción breve de tu rol, responsabilidades y logros.</p>
+        </div>
+
+        <div id="contact" class="section">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme a través de las siguientes plataformas:</p>
+            <ul>
+                <li>Email: [tuemail@example.com]</li>
+                <li>LinkedIn: [tu perfil de LinkedIn]</li>
+                <li>GitHub: [tu perfil de GitHub]</li>
+            </ul>
+            <p>También puedes dejarme un mensaje a continuación:</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="text-center">
+        <p>&copy; 2024 [Tu Nombre]. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
