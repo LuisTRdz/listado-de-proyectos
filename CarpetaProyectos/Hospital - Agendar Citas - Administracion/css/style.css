@@ -26,19 +26,12 @@ body {
     padding: 15px;
 }
 
-.nav-link {
-    color: #007bff;
-}
-
-.nav-link:hover {
-    color: #0056b3;
+/* Elimina margen superior */
+.custom-carousel {
+    margin-top: 0; /* Elimina margen superior */
 }
 
 /* Carousel */
-.custom-carousel {
-    margin-top: 20px;
-}
-
 .carousel-caption {
     background: rgba(0, 0, 0, 0.5);
     color: white;
@@ -51,7 +44,7 @@ body {
     background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px 0; /* Mantiene el margen inferior */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -76,7 +69,7 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 10px;
-    margin: 10px;
+    margin: 10px 0; /* Margen superior e inferior para evitar superposición */
     flex: 1 1 calc(30% - 20px);
     text-align: center;
 }
