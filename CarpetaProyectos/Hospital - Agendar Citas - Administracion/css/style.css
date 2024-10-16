@@ -474,3 +474,34 @@ span{
     color: #1e81b0; /* Puedes cambiar "red" al color que desees */
     padding-right: 10px;
   }
+
+/* Asegúrate de que el contenedor principal se ajuste al ancho */
+.container-fluid {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Hacer que las imágenes del carrusel sean responsivas */
+.carousel-inner img {
+    width: 100%;
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+/* Asegúrate de que las tarjetas también se adapten */
+.card {
+    margin-bottom: 20px; /* Espaciado entre tarjetas */
+}
+
+/* Asegura que los textos no desborden el contenedor */
+.custom-container {
+    word-wrap: break-word;
+}
+
+/* Estilos para el mapa */
+.contenedormapa iframe {
+    width: 100%;
+    height: 450px; /* Ajusta la altura según sea necesario */
+    border: 0;
+}
+
