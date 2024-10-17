@@ -74,30 +74,48 @@
                         </div>
                         
                         <script>
-                            function reservar() {
-                                const fechaLlegada = document.getElementById('fecha-llegada').value;
-                                const fechaSalida = document.getElementById('fecha-salida').value;
-                        
-                                // Validar que se hayan seleccionado las fechas
-                                if (!fechaLlegada || !fechaSalida) {
-                                    alert("Por favor, selecciona ambas fechas.");
-                                    return;
-                                }
-                        
-                                // Verificar que la fecha de salida sea posterior a la de llegada
-                                if (new Date(fechaSalida) <= new Date(fechaLlegada)) {
-                                    alert("La fecha de salida debe ser posterior a la fecha de llegada.");
-                                    return;
-                                }
-                        
-                                // Mostrar un mensaje de confirmación
-                                alert("¡Reserva realizada con éxito!");
-                        
-                                // Borrar las fechas ingresadas
-                                document.getElementById('fecha-llegada').value = '';
-                                document.getElementById('fecha-salida').value = '';
-                            }
-                        </script>
+    function actualizarFechaSalidaMin() {
+        const fechaLlegada = document.getElementById('fecha-llegada').value;
+        const fechaSalidaInput = document.getElementById('fecha-salida');
+
+        // Habilitar el campo de fecha de salida
+        fechaSalidaInput.disabled = false;
+
+        // Establecer la fecha mínima para la fecha de salida
+        if (fechaLlegada) {
+            const fechaLlegadaDate = new Date(fechaLlegada);
+            fechaSalidaInput.min = fechaLlegadaDate.toISOString().split('T')[0];
+        } else {
+            fechaSalidaInput.disabled = true; // Si no hay fecha de llegada, deshabilitar la salida
+        }
+    }
+
+    function reservar() {
+        const fechaLlegada = document.getElementById('fecha-llegada').value;
+        const fechaSalida = document.getElementById('fecha-salida').value;
+
+        // Validar que se hayan seleccionado las fechas
+        if (!fechaLlegada || !fechaSalida) {
+            alert("Por favor, selecciona ambas fechas.");
+            return;
+        }
+
+        // Verificar que la fecha de salida sea posterior a la de llegada
+        if (new Date(fechaSalida) <= new Date(fechaLlegada)) {
+            alert("La fecha de salida debe ser posterior a la fecha de llegada.");
+            return;
+        }
+
+        // Mostrar un mensaje de confirmación
+        alert("¡Reserva realizada con éxito!");
+
+        // Borrar las fechas ingresadas
+        document.getElementById('fecha-llegada').value = '';
+        document.getElementById('fecha-salida').value = '';
+        document.getElementById('fecha-salida').disabled = true; // Deshabilitar nuevamente la fecha de salida
+    }
+</script>
+
                         
                         
                     </form>
