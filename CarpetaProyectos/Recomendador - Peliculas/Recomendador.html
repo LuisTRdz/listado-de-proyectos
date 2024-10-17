@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Buscador de Películas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/DiseñoRecomendador.css">
+</head>
+<body>
+    <div class="blur-background"></div>
+
+    <a href="#top" class="floating-button" id="scroll-to-top-button">
+    <i class="fas fa-arrow-up">↑</i>
+</a>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Buscar Películas: </a>
+        <input type="text" id="search-input" class="form-control" placeholder="Buscar películas">
+    </nav>
+
+    <div class="container">
+        <div class="row" style="background-color: rgba(0, 0, 0, 0.8); border-radius: 10px; padding: 20px; margin-top: 0px;">
+            <div class="col-md-12">
+                <div class="genre-filter" style="text-align:center;">
+                    <p style="text-align: center; color: white; font-size: 20px;">Filtrar por Género:</p>
+                    <button class="btn btn-outline-light filter-button" data-genre="all">Todos</button>
+                    <button class="btn btn-outline-light filter-button" data-genre="Anime">Anime</button>
+                    <button class="btn btn-outline-light filter-button" data-genre="Terror">Terror</button>
+                    <button class="btn btn-outline-light filter-button" data-genre="Fantasía">Fantasía</button>
+                    <button class="btn btn-outline-light filter-button" data-genre="Acción">Acción</button>
+                    <button class="btn btn-outline-light filter-button" data-genre="Ciencia Ficción">Ciencia Ficción
+                    </button>
+                    <button class="btn btn-outline-light filter-button" data-genre="Infantil">Infantil</button>
+                </div>
+            </div>
+        </div>
+
+    <div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="row movie-results">
+            <div class="col-md-4">
+                <div class="movie-card">
+                    <img src="img/kny.jpg" class="movie-image" alt="Título de la Película 1">
+                    <div class="movie-details">
+                        <h5>Kimetsu No Yaiba</h5>
+                        <p>Género: Anime</p>
+                        <p>Valoración: 5.0/5.0</p>
+                        <p>Estreno: NO</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="movie-card">
+                    <img src="img/fnaf.jpeg" class="movie-image" alt="Título de la Película 2">
+                    <div class="movie-details">
+                        <h5>Five Nights At Freddy's</h5>
+                        <p>Género: Terror</p>
+                        <p>Valoración: 4.5/5.0</p>
+                        <p>Estreno: SI</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="movie-card">
+                    <img src="img/animales.jpg" class="movie-image" alt="Título de la Película 3">
+                    <div class="movie-details">
+                        <h5>Animales Fantásticos</h5>
+                        <p>Género: Acción</p>
+                        <p>Valoración: 5.0/5.0</p>
+                        <p>Estreno: NO</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="movie-card">
+                    <img src="img/faf.jpg" class="movie-image" alt="Título de la Película 4">
+                    <div class="movie-details">
+                        <h5>Fast & Furious</h5>
+                        <p>Género: Acción</p>
+                        <p>Valoración: 3.9/5.0</p>
+                        <p>Estreno: NO</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="movie-card">
+                    <img src="img/juegos.jpg" class="movie-image" alt="Título de la Película 5">
+                    <div class="movie-details">
+                        <h5>Juegos Del Hambre</h5>
+                        <p>Género: Acción</p>
+                        <p>Valoración: 5.0/5.0</p>
+                        <p>Estreno: SI</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="movie-card">
+                    <img src="img/marvels.jpg" class="movie-image" alt="Título de la Película 6">
+                    <div class="movie-details">
+                        <h5>The Marvels</h5>
+                        <p>Género: Acción</p>
+                        <p>Valoración: 3.5/5.0</p>
+                        <p>Estreno: SI</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="movie-card">
+                    <img src="img/abrelejaime.jpg" class="movie-image" alt="Título de la Película 7">
+                    <div class="movie-details">
+                        <h5>Oppenheimer</h5>
+                        <p>Género: Acción</p>
+                        <p>Valoración: 4.9/5.0</p>
+                        <p>Estreno: NO</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="movie-card">
+                    <img src="img/saw.jpg" class="movie-image" alt="Título de la Película 8">
+                    <div class="movie-details">
+                        <h5>SAW X</h5>
+                        <p>Género: Terror</p>
+                        <p>Valoración: 4.4/5.0</p>
+                        <p>Estreno: SI</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="movie-card">
+                    <img src="img/suzume.jpg" class="movie-image" alt="Título de la Película 9">
+                    <div class="movie-details">
+                        <h5>Suzume</h5>
+                        <p>Género: Anime</p>
+                        <p>Valoración: 5.0/5.0</p>
+                        <p>Estreno: NO</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="movie-card">
+                    <img src="img/transformers.jpg" class="movie-image" alt="Título de la Película 10">
+                    <div class="movie-details">
+                        <h5>Transformers</h5>
+                        <p>Género: Ciencia Ficción</p>
+                        <p>Valoración: 4.2/5.0</p>
+                        <p>Estreno: NO</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="movie-card">
+                    <img src="img/kung3.jpg" class="movie-image" alt="Título de la Película 11">
+                    <div class="movie-details">
+                        <h5>Kung Fu Panda 3</h5>
+                        <p>Género: Infantil</p>
+                        <p>Valoración: 5.0/5.0</p>
+                        <p>Estreno: NO</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="movie-card">
+                    <img src="img/shazam.jpg" class="movie-image" alt="Título de la Película 12">
+                    <div class="movie-details">
+                        <h5>Shazam</h5>
+                        <p>Género: Acción</p>
+                        <p>Valoración: 3.9/5.0</p>
+                        <p>Estreno: NO</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="movie-card">
+                    <img src="img/kung2.jpeg" class="movie-image" alt="Título de la Película 2">
+                    <div class="movie-details">
+                        <h5>Kung Fu Panda 2</h5>
+                        <p>Género: Infantil</p>
+                        <p>Valoración: 4.5/5.0</p>
+                        <p>Estreno: NO</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="movie-card">
+                    <img src="img/kung.jpg" class="movie-image" alt="Título de la Película 3">
+                    <div class="movie-details">
+                        <h5>Kung Fu Panda</h5>
+                        <p>Género: Infantil</p>
+                        <p>Valoración: 5.0/5.0</p>
+                        <p>Estreno: NO</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="movie-card">
+                    <img src="img/faf.jpg" class="movie-image" alt="Título de la Película 4">
+                    <div class="movie-details">
+                        <h5>Fast & Furious</h5>
+                        <p>Género: Acción</p>
+                        <p>Valoración: 3.9/5.0</p>
+                        <p>Estreno: NO</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="movie-card">
+                    <img src="img/juegos.jpg" class="movie-image" alt="Título de la Película 5">
+                    <div class="movie-details">
+                        <h5>Juegos Del Hambre</h5>
+                        <p>Género: Acción</p>
+                        <p>Valoración: 5.0/5.0</p>
+                        <p>Estreno: SI</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="movie-card">
+                    <img src="img/marvels.jpg" class="movie-image" alt="Título de la Película 6">
+                    <div class="movie-details">
+                        <h5>The Marvels</h5>
+                        <p>Género: Acción</p>
+                        <p>Valoración: 3.5/5.0</p>
+                        <p>Estreno: SI</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="movie-card">
+                    <img src="img/abrelejaime.jpg" class="movie-image" alt="Título de la Película 7">
+                    <div class="movie-details">
+                        <h5>Oppenheimer</h5>
+                        <p>Género: Acción</p>
+                        <p>Valoración: 4.9/5.0</p>
+                        <p>Estreno: NO</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="movie-card">
+                    <img src="img/saw.jpg" class="movie-image" alt="Título de la Película 8">
+                    <div class="movie-details">
+                        <h5>SAW X</h5>
+                        <p>Género: Terror</p>
+                        <p>Valoración: 4.4/5.0</p>
+                        <p>Estreno: SI</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="movie-card">
+                    <img src="img/suzume.jpg" class="movie-image" alt="Título de la Película 9">
+                    <div class="movie-details">
+                        <h5>Suzume</h5>
+                        <p>Género: Anime</p>
+                        <p>Valoración: 5.0/5.0</p>
+                        <p>Estreno: NO</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="movie-card">
+                    <img src="img/transformers.jpg" class="movie-image" alt="Título de la Película 10">
+                    <div class="movie-details">
+                        <h5>Transformers</h5>
+                        <p>Género: Ciencia Ficción</p>
+                        <p>Valoración: 4.2/5.0</p>
+                        <p>Estreno: NO</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="movie-card">
+                    <img src="img/kung.jpg" class="movie-image" alt="Título de la Película 11">
+                    <div class="movie-details">
+                        <h5>Kung Fu Panda 3</h5>
+                        <p>Género: Infantil</p>
+                        <p>Valoración: 5.0/5.0</p>
+                        <p>Estreno: NO</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="col-md-3" id="recommended-movies-container">
+            <div class="vertical-container">
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            const movies = [
+                {
+                title: "Demon Slayer: DR",
+                genre: "Anime",
+                rating: "5.0/5.0",
+                isNew: false,
+                image: "img/kny.jpg",
+            },
+            {
+                title: "Five Nights At Freddy's",
+                genre: "Terror",
+                rating: "4.5/5.0",
+                isNew: true,
+                image: "img/fnaf.jpeg",
+            },
+            {
+                title: "Animales Fantásticos",
+                genre: "Fantasía",
+                rating: "5.0/5.0",
+                isNew: false,
+                image: "img/animales.jpg",
+            },
+            {
+                title: "Fast & Furious X",
+                genre: "Acción",
+                rating: "3.9/5.0",
+                isNew: false,
+                image: "img/faf.jpg",
+            },
+            {
+                title: "Juegos Del Hambre",
+                genre: "Acción",
+                rating: "5.0/5.0",
+                isNew: true,
+                image: "img/juegos.jpg",
+            },
+            {
+                title: "The Marvels",
+                genre: "Acción",
+                rating: "3.5/5.0",
+                isNew: true,
+                image: "img/marvels.jpg",
+            },
+            {
+                title: "Oppenheimer",
+                genre: "Acción",
+                rating: "4.9/5.0",
+                isNew: false,
+                image: "img/abrelejaime.jpg",
+            },
+            {
+                title: "SAW X",
+                genre: "Terror",
+                rating: "4.4/5.0",
+                isNew: true,
+                image: "img/saw.jpg",
+            },
+            {
+                title: "Suzume",
+                genre: "Anime",
+                rating: "5.0/5.0",
+                isNew: false,
+                image: "img/suzume.jpg",
+            },
+            {
+                title: "Transformers",
+                genre: "Ciencia Ficción",
+                rating: "4.2/5.0",
+                isNew: false,
+                image: "img/transformers.jpg",
+            },
+            {
+                title: "Kung Fu Panda 3",
+                genre: "Infantil",
+                rating: "5.0/5.0",
+                isNew: false,
+                image: "img/kung3.jpg",
+            },
+            {
+                title: "Shazam",
+                genre: "Acción",
+                rating: "3.9/5.0",
+                isNew: false,
+                image: "img/shazam.jpg",
+            },
+            {
+                title: "Kung Fu Panda 2",
+                genre: "Infantil",
+                rating: "4.5/5.0",
+                isNew: false,
+                image: "img/kung2.jpg",
+            },
+            {
+                title: "Kung Fu Panda",
+                genre: "Infantil",
+                rating: "5.0/5.0",
+                isNew: false,
+                image: "img/kung.jpg",
+            },
+            {
+                title: "Godzilla Vs. Kong",
+                genre: "Ciencia Ficción",
+                rating: "4.5/5.0",
+                isNew: false,
+                image: "img/godz.jpg",
+            },
+            {
+                title: "Juegos Del Hambre: S1",
+                genre: "Acción",
+                rating: "4.5/5.0",
+                isNew: false,
+                image: "img/sinsajo.jpg",
+            },
+            {
+                title: "Juegos Del Hambre: S2",
+                genre: "Acción",
+                rating: "5.0/5.0",
+                isNew: false,
+                image: "img/sinsajo2.jpg",
+            },
+            {
+                title: "Demon Slayer: Train",
+                genre: "Anime",
+                rating: "4.9/5.0",
+                isNew: false,
+                image: "img/knyT.jpg",
+            },
+            {
+                title: "Fast & Furious 9",
+                genre: "Accion",
+                rating: "4.4/5.0",
+                isNew: false,
+                image: "img/faf9.jpg",
+            },
+            {
+                title: "Scream",
+                genre: "Terror",
+                rating: "3.8/5.0",
+                isNew: false,
+                image: "img/scream.jpg",
+            },
+            {
+                title: "Spiderman: ATSV",
+                genre: "Acción",
+                rating: "4.2/5.0",
+                isNew: false,
+                image: "img/spiderman.jpg",
+            }
+        ];
+
+function showMovies() {
+        const searchText = $("#search-input").val().toLowerCase();
+        const movieResults = $(".movie-results");
+        movieResults.empty();
+
+        let genreToFilter = null;
+        let recommendedMovies = [];
+        let resultsFound = false;
+
+        movies.forEach(movie => {
+            if (movie.title.toLowerCase().includes(searchText)) {
+                const card = `
+                    <div class="col-md-4">
+                        <div class="movie-card">
+                            <img src="${movie.image}" class="movie-image" alt="${movie.title}">
+                            <div class="movie-details">
+                                <h5>${movie.title}</h5>
+                                <p>Género: ${movie.genre}</p>
+                                <p>Valoración: ${movie.rating}</p>
+                                <p>Estreno: ${movie.isNew ? 'Sí' : 'No'}</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                movieResults.append(card);
+
+                genreToFilter = movie.genre;
+                resultsFound = true;
+            }
+        });
+
+        if (!resultsFound) {
+            movieResults.append('<h5 style="color: white; text-align: center">No se encontraron resultados en la búsqueda...</h5>');
+        }
+
+        updateRecommendedMovies(genreToFilter);
+    }
+
+    function updateRecommendedMovies(genre) {
+        const recommendedContainer = $("#recommended-movies-container");
+        recommendedContainer.empty();
+
+        if (genre) {
+            recommendedMovies = movies.filter(movie => movie.genre === genre);
+
+            recommendedContainer.append('<h5 style="color: white; text-align: center">Películas Recomendadas (Por Género)</h5><br>');
+
+            recommendedMovies.forEach(recommendedMovie => {
+                const recommendedCard = `
+                    <div class="vertical-item">
+                        <h5>${recommendedMovie.title}</h5>
+                        <p>${genre}</p>
+                    </div>
+                `;
+                recommendedContainer.append(recommendedCard);
+            });
+        }
+    }
+
+    function filterMoviesByGenre(genre) {
+        const movieResults = $(".movie-results");
+        movieResults.empty();
+
+        movies.forEach(movie => {
+            if (genre === "all" || movie.genre === genre) {
+                const card = `
+                    <div class="col-md-4">
+                        <div class="movie-card">
+                            <img src="${movie.image}" class="movie-image" alt="${movie.title}">
+                            <div class="movie-details">
+                                <h5>${movie.title}</h5>
+                                <p>Género: ${movie.genre}</p>
+                                <p>Valoración: ${movie.rating}</p>
+                                <p>Estreno: ${movie.isNew ? 'Sí' : 'No'}</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                movieResults.append(card);
+            }
+        });
+
+        updateRecommendedMovies(genre);
+    }
+
+    $("#search-input").on("input", showMovies);
+    showMovies();
+
+    $(".filter-button").on("click", function () {
+        const genre = $(this).data("genre");
+        filterMoviesByGenre(genre);
+    });
+});
+    </script>
+</body>
+</html>
