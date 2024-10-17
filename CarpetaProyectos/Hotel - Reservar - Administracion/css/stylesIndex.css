@@ -1,0 +1,217 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #e0e0e0; /* Color de texto claro para contraste */
+    background-color: #1a1a2e; /* Fondo oscuro */
+}
+
+#seccion_principal {
+    background-image: url('../img/principal.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.aconf:hover {
+    border-bottom: 2px solid #4ecca3; /* Color suave para el hover */
+}
+
+#seccion_carrusel {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center; /* Centra el carrusel */
+}
+
+#carrusel-section {
+    position: relative; /* Para posicionar el texto del carrusel */
+    width: 90%; /* Ajusta el ancho del contenedor */
+    max-width: 900px; /* Limita el tamaño máximo */
+}
+
+.carousel-inner {
+    display: flex;
+    transition: opacity 0.6s ease; /* Suaviza la transición entre imágenes */
+}
+
+.carousel-item {
+    min-width: 100%; /* Asegura que cada imagen ocupe todo el carrusel */
+    opacity: 0; /* Oculta las imágenes por defecto */
+    transition: opacity 0s ease-in-out; /* Suaviza la transición */
+}
+
+.carousel-item.active {
+    opacity: 1; /* Solo la imagen activa será visible */
+}
+
+.carousel-inner img {
+    width: 100%; /* Asegúrate de que la imagen ocupe el ancho del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    object-fit: cover; /* Cubre el área del carrusel sin distorsionar la imagen */
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+    filter: brightness(0.7); /* Ajuste de brillo para dar un efecto más oscuro */
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px; /* Ajusta la posición vertical del texto */
+    left: 50%;
+    transform: translateX(-50%); /* Centra el texto horizontalmente */
+    color: #ffffff; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    background: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    max-width: 80%; /* Limita el ancho del contenedor del texto */
+}
+
+.carousel-caption h3 {
+    font-size: 1.8rem; /* Tamaño de fuente para el título */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+.carousel-caption p {
+    font-size: 1rem; /* Tamaño de fuente para la descripción */
+    line-height: 1.5; /* Altura de línea para mejor legibilidad */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    width: 30px; /* Tamaño reducido de las flechas */
+    height: 30px; /* Tamaño reducido de las flechas */
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajusta para centrar exactamente */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 15px; /* Tamaño reducido del ícono */
+    height: 15px; /* Tamaño reducido del ícono */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#seccion_ofertas {
+    background-color: #2b2d42; /* Azul oscuro */
+    padding: 50px 20px;
+    color: white;
+    text-align: center; /* Centra el texto de las ofertas */
+}
+
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 15px;
+    max-width: 300px;
+    background-color: #283f83; /* Color suave para las tarjetas */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+#seccion_opiniones {
+    padding: 50px 20px;
+    text-align: center; /* Centra las opiniones */
+}
+
+.testimonial-card {
+    max-width: 400px;
+    margin: auto;
+    background-color: #2b2d42; /* Azul oscuro para las tarjetas de testimonio */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#seccion_sobre {
+    background-color: #2b2d42; /* Azul oscuro */
+    color: white;
+    padding: 50px 20px;
+    text-align: center; /* Centra el texto en "Sobre Nosotros" */
+}
+
+#sobre-nosotros-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos dentro del contenedor */
+}
+
+#texto-container {
+    flex: 1;
+    padding: 40px;
+}
+
+#imagen-container {
+    flex: 1;
+    overflow: hidden;
+}
+
+#imagen-container img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #2b2d42; /* Azul oscuro */
+    color: white;
+    padding: 20px;
+    text-align: center; /* Centra el texto en el pie de página */
+}
+
+.btn-st {
+    padding: 10px 40px;
+    font-weight: 500;
+    background-color: #4ecca3; /* Botón de color suave */
+    color: #1a1a2e; /* Texto oscuro para contraste */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.btn-st:hover {
+    background-color: #3f8e9d; /* Color más oscuro al pasar el ratón */
+}
+
+@media (max-width: 768px) {
+    #seccion_principal {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .btn-st {
+        width: 100%;
+    }
+
+    #sobre-nosotros-container {
+        flex-direction: column;
+    }
+
+    #texto-container {
+        padding: 20px;
+    }
+}
+
+
