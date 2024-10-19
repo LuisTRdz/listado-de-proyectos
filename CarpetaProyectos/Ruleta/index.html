@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Ruleta</title>
+</head>
+<body>
+    <div class="container">
+        <div class="input-container">
+            <h3>¡Gira la Ruleta y Gana!</h3>
+            <div class="input-group mb-3">
+                <input type="number" id="userNumber" min="1" max="100" placeholder="Agregar a ruleta" class="form-control">
+                <div class="input-group-append">
+                    <button id="addNumber" class="btn btn-custom" style="height: 38px; width: 50px;">➕</button>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <input type="number" id="sequentialNumber" min="1" max="500" placeholder="Secuencia de números" class="form-control">
+            </div>
+        </div>
+        <div class="spin-container">
+            <canvas id="canvas" width="350" height="350"></canvas>
+            <img id="centerImage" src="img/topo.gif" alt="Centro" />
+            <input type="button" class="btn btn-custom" value="GIRAR" id="spin" />
+        </div>
+    </div>
+
+    <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="resultModalLabel">¡Has ganado!</h5>
+                    <button id="closeButton" type="button" class="close" aria-label="Close" disabled>
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="result"></div>
+                <div class="modal-footer">
+                    <button id="modalCloseButton" type="button" class="btn btn-secondary" data-dismiss="modal" disabled>Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
