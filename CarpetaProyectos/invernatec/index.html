@@ -16,8 +16,7 @@
             <a href=" " class="mb-4 lg:mb-0">
                 <img src="img/logo.png" alt="Logo-InvernaTec" width="50">
             </a>
-            <button id="menu-btn" class="lg:hidden bg-gray-500 text-white px-4 py-2 rounded-md">Menú</button>
-            <nav id="menu" class="p-4 flex-col lg:flex-row justify-between gap-10 hidden lg:block">
+            <nav id="menu" class="p-4 flex-col lg:flex-row justify-between gap-10 lg:block">
                 <ul class="flex flex-col items-center lg:flex-row gap-4 text-gray-600">
                     <li class="hover:text-gray-400"><a href=" ">Home</a></li>
                     <li class="hover:text-gray-400"><a href="#AboutUs">About us</a></li>
@@ -74,34 +73,34 @@
     </footer>
 
     <!-- Modal de contacto -->
-<div id="contactModal" class="modal hidden">
-    <div class="modal-content">
-        <span class="close" id="closeModal">&times;</span>
-        <h2 class="text-2xl font-bold">Contact Us</h2>
-        <div class="contact-info mt-4">
-            <div class="flex items-center mb-2">
-                <img src="img/telefono.png" alt="Phone" class="icon">
-                <p class="ml-2">Tel: +52 (834) 148-8987</p>
-            </div>
-            <div class="flex items-center mb-2">
-                <img src="img/email.png" alt="Email" class="icon">
-                <p class="ml-2">Email: <a href="mailto:luistr9889@gmail.com" class="text-blue-600 hover:underline">luistr9889@gmail.com</a></p>
-            </div>
-            <div class="flex items-center mb-2">
-                <img src="img/website.png" alt="Website" class="icon">
-                <p class="ml-2">Website: <a href=" " target="_blank" class="text-blue-600 hover:underline">https://proyectosrealizados-luistr.netlify.app/carpetaproyectos/invernatec/</a></p>
-            </div>
-            <div class="flex items-center mb-2">
-                <img src="img/address.png" alt="Address" class="icon">
-                <p class="ml-2">Address: Blvd. Emilio Portes Gil 1301, Sin Nombre de Col 7, 87010 Cdad. Victoria, Tamps.</p>
-            </div>
-            <div class="flex items-center mb-2">
-                <img src="img/personal.png" alt="Personal Page" class="icon">
-                <p class="ml-2">Personal Page: <a href="https://proyectosrealizados-luistr.netlify.app/" target="_blank" class="text-blue-600 hover:underline">https://proyectosrealizados-luistr.netlify.app/</a></p>
+    <div id="contactModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2 class="text-2xl font-bold">Contact Us</h2>
+            <div class="contact-info mt-4">
+                <div class="flex items-center mb-2">
+                    <img src="img/telefono.png" alt="Phone" class="icon">
+                    <p class="ml-2">Tel: +52 (834) 148-8987</p>
+                </div>
+                <div class="flex items-center mb-2">
+                    <img src="img/email.png" alt="Email" class="icon">
+                    <p class="ml-2">Email: <a href="mailto:luistr9889@gmail.com" class="text-blue-600 hover:underline">luistr9889@gmail.com</a></p>
+                </div>
+                <div class="flex items-center mb-2">
+                    <img src="img/website.png" alt="Website" class="icon">
+                    <p class="ml-2">Website: <a href=" " target="_blank" class="text-blue-600 hover:underline">https://proyectosrealizados-luistr.netlify.app/carpetaproyectos/invernatec/</a></p>
+                </div>
+                <div class="flex items-center mb-2">
+                    <img src="img/address.png" alt="Address" class="icon">
+                    <p class="ml-2">Address: Blvd. Emilio Portes Gil 1301, Sin Nombre de Col 7, 87010 Cdad. Victoria, Tamps.</p>
+                </div>
+                <div class="flex items-center mb-2">
+                    <img src="img/personal.png" alt="Personal Page" class="icon">
+                    <p class="ml-2">Personal Page: <a href="https://proyectosrealizados-luistr.netlify.app/" target="_blank" class="text-blue-600 hover:underline">https://proyectosrealizados-luistr.netlify.app/</a></p>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 </body>
 <script>
@@ -122,22 +121,6 @@
             event.preventDefault(); // Evita el comportamiento predeterminado del enlace
             document.getElementById('contactModal').classList.remove('hidden');
         };
-
-        // Funcionalidad del botón de menú
-        const menuButton = document.getElementById("menu-btn");
-        const menu = document.getElementById("menu");
-
-        // Asegúrate de que el botón y el menú existan
-        if (menuButton && menu) {
-            menuButton.addEventListener("click", () => {
-                menu.classList.toggle("hidden");
-                console.log("Menú alternado"); // Para depuración
-            });
-        } else {
-            console.error("El botón del menú o el menú no se encontraron.");
-        }
     });
 </script>
-
-
 </html>
