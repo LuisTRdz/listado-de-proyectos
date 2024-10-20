@@ -845,6 +845,44 @@ html {
     height: 24px;
 }
 
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Asegúrate de que el modal esté por encima de otros elementos */
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%; /* Asegura que el modal no exceda el 90% del ancho de la pantalla */
+    max-height: 90%; /* Limita la altura del modal */
+    overflow-y: auto; /* Permite desplazamiento si el contenido es muy largo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    max-width: 30px; /* Ajusta el tamaño de los íconos */
+    height: auto; /* Mantiene la proporción */
+}
+
+@media (max-width: 600px) {
+    .modal-content {
+        padding: 15px; /* Reduce el padding en pantallas pequeñas */
+    }
+
+    .icon {
+        max-width: 25px; /* Ajusta el tamaño de los íconos en pantallas pequeñas */
+    }
+}
+
 #contactModal.hidden {
     display: none;
 }
