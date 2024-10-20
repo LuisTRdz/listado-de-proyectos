@@ -127,10 +127,17 @@
         const menuButton = document.getElementById("menu-btn");
         const menu = document.getElementById("menu");
 
-        menuButton.addEventListener("click", () => {
-            menu.classList.toggle("hidden");
-        });
+        // Asegúrate de que el botón y el menú existan
+        if (menuButton && menu) {
+            menuButton.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+                console.log("Menú alternado"); // Para depuración
+            });
+        } else {
+            console.error("El botón del menú o el menú no se encontraron.");
+        }
     });
 </script>
+
 
 </html>
