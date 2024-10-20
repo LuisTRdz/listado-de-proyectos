@@ -1,0 +1,125 @@
+html, body {
+    height: 100%; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+    margin: 0; /* Elimina márgenes por defecto */
+}
+
+body {
+    background: #1f5040; /* Color de fondo sólido para evitar "cuadros" */
+    font-family: 'Arial', sans-serif; /* Fuente moderna */
+    color: #e0f2f1; /* Color de texto claro */
+    padding: 20px; /* Espaciado alrededor del contenido */
+}
+
+.container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 50px auto; /* Centramos el contenedor */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados del contenedor */
+    background: rgba(30, 50, 40, 0.9); /* Fondo oscuro y transparente */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra suave para dar profundidad */
+}
+
+h1 {
+    color: #a5d6a7; /* Color más claro para el título */
+    margin-bottom: 30px; /* Espacio inferior */
+    text-align: center; /* Centrado del título */
+    font-size: 2.5rem; /* Tamaño de fuente mayor */
+}
+
+.card {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 250px; /* Altura fija para todas las cards */
+    overflow: hidden; /* Evita que el contenido sobresalga */
+    border: 1px solid #1a3c2d; /* Borde verde oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Transición suave para el hover */
+    background-color: #3b8c6f; /* Fondo verde oliva claro para las cards */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Sombra más intensa al pasar el ratón */
+    background-color: #4abf8e; /* Color más claro al pasar el ratón */
+}
+
+.card img {
+    width: 100%; /* Imagen se ajusta al ancho de la tarjeta */
+    height: 100%; /* Imagen ocupa toda la altura de la tarjeta */
+    object-fit: cover; /* Mantiene la proporción de la imagen y cubre el área */
+    border-radius: 10px; /* Bordes redondeados en la imagen */
+}
+
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1050;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+    backdrop-filter: blur(5px); /* Difuminado de fondo */
+}
+
+.modal-dialog {
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    height: 100%; /* Ocupa toda la altura de la ventana */
+}
+
+.modal-content {
+    max-width: 600px; /* Ancho fijo del modal */
+    height: 400px; /* Altura fija del contenido del modal */
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+}
+
+.modal img {
+    max-width: 100%; /* Imagen se adapta al contenedor del modal */
+    max-height: 100%; /* Imagen se adapta a la altura del contenedor del modal */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+}
+
+.btn-return {
+    display: block; /* Asegura que ocupa todo el ancho */
+    margin: 20px auto; /* Centramos el botón */
+    background-color: #a5d6a7; /* Color de fondo verde claro */
+    color: #1f5040; /* Color de texto oscuro */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s; /* Transición suave */
+    font-size: 1.1rem; /* Tamaño de fuente más grande */
+}
+
+.btn-return:hover {
+    background-color: #1f5040; /* Color más oscuro al pasar el ratón */
+    color: #a5d6a7;
+}
+
+.close {
+    position: absolute;
+    top: 15px; /* Alineación vertical mejorada */
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo más oscuro para el botón de cerrar */
+    border-radius: 50%; /* Circular */
+    padding: 5px;
+    z-index: 1051; /* Asegura que esté por encima de la imagen */
+    display: flex; /* Usar flex para centrar el contenido */
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    width: 40px; /* Tamaño fijo */
+    height: 40px; /* Tamaño fijo */
+}
+
+.close:hover {
+    background-color: rgba(255, 0, 0, 0.9); /* Color más intenso al pasar el mouse */
+}
