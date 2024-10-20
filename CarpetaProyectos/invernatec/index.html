@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Astro description">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="generator" content="Astro v4.15.1">
+    <title>InvernaTec - Invernadero de Alta Tecnología</title>
+    <link rel="stylesheet" href="css/Dpiwhgme.css">
+    <script type="module" src="js/B8P06v6G.js"></script>
+</head>
+<body class="bg-[#1f5040]">
+    <div class="flex flex-col lg:flex-row bg-white items-center justify-around">
+        <div class="flex flex-col lg:flex-row items-center gap-2 lg:p-0 p-4">
+            <a href=" " class="mb-4 lg:mb-0">
+                <img src="img/logo.png" alt="Logo-InvernaTec" width="50">
+            </a>
+            <button id="menu-btn" class="lg:hidden bg-gray-500 text-white px-4 py-2 rounded-md">Menú</button>
+            <nav id="menu" class="p-4 flex-col lg:flex-row justify-between gap-10 hidden lg:block">
+                <ul class="flex flex-col items-center lg:flex-row gap-4 text-gray-600">
+                    <li class="hover:text-gray-400"><a href=" ">Home</a></li>
+                    <li class="hover:text-gray-400"><a href="#AboutUs">About us</a></li>
+                    <li class="hover:text-gray-400"><a href="#Contact">Contact</a></li>
+                    <li class="hover:text-gray-400"><a href="html/galeria.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hidden lg:block flex-col items-center lg:flex-row gap-4 lg:mb-0 mb-4">
+            <a class="bg-white-400 py-2 px-8 rounded-2xl text-black border border-black hover:bg-green-200" href="http://localhost:5173/">Sign In</a>
+            <button class="bg-gray-500 py-2 px-8 rounded-2xl text-white hover:bg-gray-800 line-through" disabled>Request a demo</button>
+        </div>
+    </div>
+    <main class="flex text-center justify-center items-center flex-col h-[40rem] lg:min-h-screen relative">
+        <h1 class="text-white italic text-6xl font-bold drop-shadow-lg">Your high-tech greenhouse</h1>
+        <br>
+        <p class="text-white drop-shadow-lg">Transforming Cultivation with Cutting-Edge Technology for a Sustainable Future</p>
+        <img src="/svgs/sprout-svgrepo-com.svg" alt="" class="absolute -z-10 xl:-bottom-52 2xl:bottom-0 bottom-0">
+    </main>
+    <section class="min-h-screen bg-white flex flex-col lg:flex-row">
+        <div class="w-full flex flex-col justify-center items-center text-left text-gray-800 bg-[#ecca9d] p-16 gap-8">
+            <h3 id="AboutUs" class="italic text-5xl">Hire the right greenhouse to be successful</h3>
+            <p>Greenhouse is a complete hiring platform that helps you hire fairly and purposefully. With Greenhouse, hiring isn’t just a task – it’s a pivotal part of your overall strategy that we can help you get right, every time.</p>
+        </div>
+        <div class="w-full">
+            <img src="img/premiacion.jpg" alt="" class="h-full object-cover">
+        </div>
+    </section>
+    <section class="min-h-screen bg-white flex flex-col lg:flex-row">
+        <div class="w-full p-10 flex justify-center items-center border-r-2 my-14 border-gray-40">
+            <p class="italic text-4xl">The technologies that helped us achieve it</p>
+        </div>
+        <div class="w-full grid grid-rows-3 grid-cols-2 justify-items-center items-center">
+            <img class="max-h-24" src="img/nodejs.png" alt="">
+            <img class="max-h-24" src="img/express.png" alt="">
+            <img class="max-h-24" src="img/php.png" alt="">
+            <img class="max-h-24" src="img/js.png" alt="">
+            <img class="max-h-24" src="img/iot.png" alt="">
+            <img class="max-h-24" src="img/mysql.png" alt="">
+        </div>
+    </section>
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex flex-col md:flex-row items-center mb-4 md:mb-0">
+                <a href=" " class="text-gray-300 hover:text-white px-4 py-2">Home</a>
+                <a href="#AboutUs" class="text-gray-300 hover:text-white px-4 py-2">About Us</a>
+                <a href="#Contact" class="text-gray-300 hover:text-white px-4 py-2">Contact</a>
+                <a href="#Gallery" class="text-gray-300 hover:text-white px-4 py-2">Gallery</a>
+            </div>
+            <div class="text-center md:text-right">
+                <p>&copy;2024 High Tech Greenhouse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de contacto -->
+    <div id="contactModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2 class="text-2xl font-bold">Contact Us</h2>
+            <div class="contact-info mt-4">
+                <div class="flex items-center mb-2">
+                    <img src="img/telefono.png" alt="Phone" class="icon">
+                    <p class="ml-2">Tel: +52 (834) 148-8987</p>
+                </div>
+                <div class="flex items-center mb-2">
+                    <img src="img/email.png" alt="Email" class="icon">
+                    <p class="ml-2">Email: invernatecGH@gmail.com</p>
+                </div>
+                <div class="flex items-center mb-2">
+                    <img src="img/website.png" alt="Website" class="icon">
+                    <p class="ml-2">Website: file:///C:/Users/luist/OneDrive/Escritorio/cv/portafolio/CarpetaProyectos/InvernaTec/index.html</p>
+                </div>
+                <div class="flex items-center mb-2">
+                    <img src="img/address.png" alt="Address" class="icon">
+                    <p class="ml-2">Address: Blvd. Emilio Portes Gil 1301, Sin Nombre de Col 7, 87010 Cdad. Victoria, Tamps.</p>
+                </div>
+                <div class="flex items-center mb-2">
+                    <img src="img/personal.png" alt="Personal Page" class="icon">
+                    <p class="ml-2">Personal Page: https://proyectosrealizados-luistr.netlify.app/</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+  // Cerrar el modal
+  document.getElementById('closeModal').onclick = function() {
+    document.getElementById('contactModal').classList.add('hidden');
+  };
+
+  // Abrir el modal al hacer clic en el enlace "Contact"
+  document.querySelector('a[href="#Contact"]').onclick = function(event) {
+    event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+    document.getElementById('contactModal').classList.remove('hidden');
+  };
+
+  // Funcionalidad del botón de menú
+  const menuButton = document.getElementById("menu-btn");
+  const menu = document.getElementById("menu");
+
+  menuButton.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+});
+</script>
+</html>
