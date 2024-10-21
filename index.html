@@ -12,7 +12,10 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <a class="navbar-brand" href="#">Luis TR</a>
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="Logo" style="height: 30px; margin-right: 8px;"> <!-- Logo agregado -->
+            Luis TR
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -35,6 +38,7 @@
     <div class="container">
         <div id="about" class="section">
             <h2>Acerca de mí</h2>
+            <img src="img/mi_foto.jpg" alt="Foto de Luis" class="img-fluid" style="max-width: 200px; border-radius: 10px;"> <!-- Foto tuya -->
             <p>Hola, soy Luis Bernardo Torres Rodríguez, egresado del Tecnológico de Ciudad Victoria en Ingeniería en Sistemas Computacionales.</p>
             <p>Tengo una base en programación con lenguajes como Java, C++ y Python. Estoy especialmente interesado en el desarrollo web y busco adquirir experiencia en bibliotecas y frameworks como React, Angular, Express y Vue.</p>
             <p>Mi objetivo es aprender y aplicar soluciones efectivas en proyectos web. Estoy entusiasmado por las oportunidades de crecimiento en este campo.</p>
@@ -45,7 +49,7 @@
             <div class="row">
                 <div class="col-md-4 col-12 mb-3">
                     <div class="card animated-card">
-                        <img src="img/invernatec.png" class="card-img-top invernatec-img" alt="Proyecto - InvernaTec">
+                        <img src="img/invernatec.png" class="card-img-top" alt="Proyecto - InvernaTec">
                         <div class="card-body">
                             <h5 class="card-title">Proyecto - InvernaTec</h5>
                             <p class="card-text">Prácticas profesionales en una empresa de exportación hortofrutícola, creando espacios automatizados y controles desde dashboards en páginas web.</p>
@@ -116,50 +120,23 @@
             <h4 style="margin-left: 20px;"><strong>Habilidades Técnicas</strong></h4>
             <h6 style="margin-left: 40px;"><strong>Lenguajes de programación</strong></h6>
             <ul style="margin-left: 40px;">
-                <li>Java</li>
-                <li>C++</li>
-                <li>Phyton</li>
+                <li>Java <img src="img/java_logo.png" alt="Java" style="height: 20px;"></li> <!-- Imagen referencial -->
+                <li>C++ <img src="img/cpp_logo.png" alt="C++" style="height: 20px;"></li>
+                <li>Python <img src="img/python_logo.png" alt="Python" style="height: 20px;"></li>
             </ul>
             <h6 style="margin-left: 40px;"><strong>Desarrollo Web</strong></h6>
             <ul style="margin-left: 40px;">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>PHP</li>
+                <li>HTML <img src="img/html_logo.png" alt="HTML" style="height: 20px;"></li>
+                <li>CSS <img src="img/css_logo.png" alt="CSS" style="height: 20px;"></li>
+                <li>JavaScript <img src="img/js_logo.png" alt="JavaScript" style="height: 20px;"></li>
+                <li>PHP <img src="img/php_logo.png" alt="PHP" style="height: 20px;"></li>
             </ul>
             <h6 style="margin-left: 40px;"><strong>Frameworks y Bibliotecas</strong></h6>
             <ul style="margin-left: 40px;">
-                <li>Bootstrap</li>
-                <li>React (en proceso de aprendizaje)</li>
-                <li>Express (en proceso de aprendizaje)</li>
-                <li>Angular (en proceso de aprendizaje)</li>
-                <li>Vue (en proceso de aprendizaje)</li>
-            </ul>
-            <h6 style="margin-left: 40px;"><strong>Backend</strong></h6>
-            <ul style="margin-left: 40px;">
-                <li>Node.js (en proceso de aprendizaje)</li>
-            </ul>
-            <h6 style="margin-left: 40px;"><strong>Bases de datos</strong></h6>
-            <ul style="margin-left: 40px;">
-                <li>MongoDB</li>
-                <li>MySQL</li>
-            </ul>
-            <h6 style="margin-left: 40px;"><strong>Control de versiones</strong></h6>
-            <ul style="margin-left: 40px;">
-                <li>Git (en proceso de aprendizaje)</li>
-            </ul>
-            <br>
-            <h4 style="margin-left: 20px;"><strong>Habilidades Interpersonales</strong></h4>
-            <ul style="margin-left: 20px;">
-                <li><strong>Trabajo en Equipo:</strong> Colaboración efectiva en proyectos grupales.</li>
-                <li><strong>Comunicación:</strong> Habilidad para explicar conceptos técnicos a personas no técnicas.</li>
-                <li><strong>Resolución de Problemas:</strong> Capacidad para enfrentar y resolver desafíos técnicos.</li>
-            </ul>
-            <br>
-            <h4 style="margin-left: 20px;"><strong>Habilidades Organizativas</strong></h4>
-            <ul style="margin-left: 20px;">
-                <li><strong>Gestión del Tiempo:</strong> Capacidad para cumplir con plazos en proyectos.</li>
-                <li><strong>Atención al Detalle:</strong> Enfoque en la precisión y calidad del trabajo.</li>
+                <li>Bootstrap <img src="img/bootstrap_logo.png" alt="Bootstrap" style="height: 20px;"></li>
+                <li>React <img src="img/react_logo.png" alt="React" style="height: 20px;"></li>
+                <li>Angular <img src="img/angular_logo.png" alt="Angular" style="height: 20px;"></li>
+                <li>Vue <img src="img/vue_logo.png" alt="Vue" style="height: 20px;"></li>
             </ul>
         </div>
 
@@ -218,6 +195,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="script/script.js"></script> <!-- Aquí se refiere a script.js -->
+    <script src="script/script.js"></script>
 </body>
 </html>
