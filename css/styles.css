@@ -202,13 +202,3 @@ body {
             left: 20px;
             z-index: 1000;
         }
-
-.profile-image {
-    max-width: 200px; /* Ajusta el tamaño de la imagen */
-    border-radius: 10px; /* Mantiene el borde redondeado */
-}
-
-.about-text {
-    flex: 1; /* Permite que el texto ocupe el espacio disponible */
-}
-
