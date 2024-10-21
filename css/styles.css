@@ -202,12 +202,6 @@ body {
             left: 20px;
             z-index: 1000;
         }
-.about-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px; /* Espaciado entre imagen y texto */
-}
 
 .profile-image {
     max-width: 200px; /* Ajusta el tamaño de la imagen */
