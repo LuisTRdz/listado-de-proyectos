@@ -52,7 +52,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     }
 
     const text = `Nombre: ${name}\nEmail: ${email}\nTu Número de Teléfono: ${userPhone}\nMensaje: ${message}`;
-    const fixedPhoneNumber = '528341488987'; // Tu número fijo
+    const fixedPhoneNumber = '5218341488987'; // Tu número fijo
     const url = `https://api.callmebot.com/whatsapp.php?phone=${fixedPhoneNumber}&text=${encodeURIComponent(text)}&apikey=${apikey}`; // Usar tu número fijo
 
     // Mostrar el modal
