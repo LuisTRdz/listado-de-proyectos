@@ -28,7 +28,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     const email = document.getElementById('email').value.trim();
     const userPhone = document.getElementById('userPhone').value.trim(); // Solo para información, no se usa en el enlace
     const message = document.getElementById('message').value.trim();
-    const apikey = document.getElementById('apikey').value; // API key
+    const apikey = '7470272'; // API key de CallMeBot
 
     // Validaciones
     if (!name) {
