@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css"> <!-- Aquí se refiere a styles.css -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -71,10 +71,11 @@
                             <p class="card-text">Prácticas profesionales en una empresa de exportación hortofrutícola.
                             </p>
                             <div>
-                                <a href="../CarpetaProyectos/InvernaTec/index.html" target="_blank"
-                                    class="btn btn-primary">Ver Proyecto</a>
                                 <a href="#" class="btn btn-secondary" data-toggle="modal"
                                     data-target="#modalInvernaTec">Acerca del Proyecto</a>
+                                <a href="../CarpetaProyectos/InvernaTec/index.html" target="_blank"
+                                    class="btn btn-primary">Ver Proyecto<img class="imgBtn-Cards"
+                                        src="./img/enlace-externo.png"></a>
                             </div>
                         </div>
                     </div>
@@ -87,10 +88,11 @@
                             <p class="card-text">Desarrollo de una aplicación web para la gestión de un hospital y
                                 agendar citas médicas.</p>
                             <div>
-                                <a href="../CarpetaProyectos/Hospital - Agendar Citas - Administracion/index.html"
-                                    target="_blank" class="btn btn-primary">Ver Proyecto</a>
                                 <a href="#" class="btn btn-secondary" data-toggle="modal"
                                     data-target="#modalHospital">Acerca del Proyecto</a>
+                                <a href="../CarpetaProyectos/Hospital - Agendar Citas - Administracion/index.html"
+                                    target="_blank" class="btn btn-primary">Ver Proyecto<img class="imgBtn-Cards"
+                                        src="./img/enlace-externo.png"></a>
                             </div>
                         </div>
                     </div>
@@ -103,10 +105,11 @@
                             <p class="card-text">Generación de vistas más intuitivas para el cliente y un sistema de
                                 gestión de reservas y habitaciones.</p>
                             <div>
-                                <a href="../CarpetaProyectos/Hotel - Reservar - Administracion/index.html"
-                                    target="_blank" class="btn btn-primary">Ver Proyecto</a>
                                 <a href="#" class="btn btn-secondary" data-toggle="modal"
                                     data-target="#modalHotel">Acerca del Proyecto</a>
+                                <a href="../CarpetaProyectos/Hotel - Reservar - Administracion/index.html"
+                                    target="_blank" class="btn btn-primary">Ver Proyecto<img class="imgBtn-Cards"
+                                        src="./img/enlace-externo.png"></a>
                             </div>
                         </div>
                     </div>
@@ -119,10 +122,12 @@
                             <p class="card-text">Recomendador de películas según géneros y preferencias, creando
                                 filtraciones para el muestreo (sin películas).</p>
                             <div>
-                                <a href="../CarpetaProyectos/Recomendador - Peliculas/index.html" target="_blank"
-                                    class="btn btn-primary">Ver Proyecto</a>
+
                                 <a href="#" class="btn btn-secondary" data-toggle="modal"
                                     data-target="#modalRecomendadorPeliculas">Acerca del Proyecto</a>
+                                <a href="../CarpetaProyectos/Recomendador - Peliculas/index.html" target="_blank"
+                                    class="btn btn-primary">Ver Proyecto<img class="imgBtn-Cards"
+                                        src="./img/enlace-externo.png"></a>
                             </div>
                         </div>
                     </div>
@@ -135,10 +140,12 @@
                             <p class="card-text">Herramienta Web para la generación de números naturales aleatorios en
                                 rangos secuenciales determinados para la obtención de números ganadores.</p>
                             <div>
-                                <a href="../CarpetaProyectos/Ruleta/index.html" target="_blank"
-                                    class="btn btn-primary">Ver Proyecto</a>
+
                                 <a href="#" class="btn btn-secondary" data-toggle="modal"
                                     data-target="#modalRuleta">Acerca del Proyecto</a>
+                                <a href="../CarpetaProyectos/Ruleta/index.html" target="_blank"
+                                    class="btn btn-primary">Ver Proyecto<img class="imgBtn-Cards"
+                                        src="./img/enlace-externo.png"></a>
                             </div>
                         </div>
                     </div>
@@ -429,16 +436,14 @@
                         <label for="message">Mensaje</label>
                         <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                     </div>
-                    <input type="hidden" id="apikey" value="7470272">
                     <button type="submit" class="btn btn-primary btn-block">Enviar</button>
                 </form>
 
-                <!-- Leyenda de WhatsApp -->
-                <div class="text-center mt-3" style="font-size: 0.9rem;">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
-                        style="height: 18px; vertical-align: middle;">
-                    <span>Los mensajes enviados a través de esta caja de comentarios se recibirán directamente vía
-                        WhatsApp.</span>
+                <!-- Leyenda de correo -->
+                <div class="email-legend">
+                    <img src="./img/gmail.png" alt="Correo electrónico">
+                    <span>Los mensajes enviados a través de este formulario se recibirán directamente en mi correo
+                        electrónico.</span>
                 </div>
             </div>
 
@@ -485,5 +490,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script/script.js"></script> <!-- Aquí se refiere a script.js -->
 </body>
-
 </html>
