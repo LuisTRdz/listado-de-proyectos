@@ -29,8 +29,12 @@ document.getElementById('userPhone').addEventListener('input', function () {
 });
 
 
-// Enviar mensaje por correo electrónico
+// =========================================================
+// ENVIAR MENSAJE POR CORREO ELECTRÓNICO
+// =========================================================
+
 document.getElementById('contactForm').addEventListener('submit', function (event) {
+
     event.preventDefault();
 
     const name = document.getElementById('name').value.trim();
@@ -58,7 +62,6 @@ document.getElementById('contactForm').addEventListener('submit', function (even
         return;
     }
 
-
     const formData = {
         _subject: '📩 Nuevo mensaje de contacto - Portafolio',
         _replyto: email,
@@ -83,9 +86,22 @@ document.getElementById('contactForm').addEventListener('submit', function (even
 
             if (data.success === true || data.success === 'true') {
 
-                $('#messageModal').modal('show');
-
                 document.getElementById('message').value = '';
+
+                // Limpiar cualquier backdrop anterior
+                $('.modal-backdrop').remove();
+                $('body').removeClass('modal-open');
+                $('body').css({
+                    'padding-right': '',
+                    'overflow': ''
+                });
+
+                // Mostrar modal correctamente
+                $('#messageModal').modal({
+                    backdrop: true,
+                    keyboard: true,
+                    show: true
+                });
 
                 console.log('Mensaje enviado correctamente.');
 
@@ -108,7 +124,31 @@ document.getElementById('contactForm').addEventListener('submit', function (even
 });
 
 
-// Manejo del botón "Enviar Otro Mensaje"
+// =========================================================
+// LIMPIEZA FORZADA DEL MODAL
+// =========================================================
+
+function limpiarModal() {
+
+    $('#messageModal').removeClass('show');
+    $('#messageModal').attr('aria-hidden', 'true');
+    $('#messageModal').css('display', 'none');
+
+    $('.modal-backdrop').remove();
+
+    $('body')
+        .removeClass('modal-open')
+        .css({
+            'padding-right': '',
+            'overflow': ''
+        });
+}
+
+
+// =========================================================
+// ENVIAR OTRO MENSAJE
+// =========================================================
+
 document.getElementById('sendAnother').addEventListener('click', function () {
 
     document.getElementById('message').value = '';
@@ -118,10 +158,17 @@ document.getElementById('sendAnother').addEventListener('click', function () {
     document.getElementById('userPhone').disabled = false;
 
     $('#messageModal').modal('hide');
+
+    setTimeout(() => {
+        limpiarModal();
+    }, 400);
 });
 
 
-// Manejo del botón "Cerrar"
+// =========================================================
+// CERRAR MODAL
+// =========================================================
+
 document.getElementById('closeModal').addEventListener('click', function () {
 
     document.getElementById('contactForm').reset();
@@ -131,27 +178,40 @@ document.getElementById('closeModal').addEventListener('click', function () {
     document.getElementById('userPhone').disabled = false;
 
     $('#messageModal').modal('hide');
+
+    setTimeout(() => {
+        limpiarModal();
+    }, 400);
 });
 
 
-// Asegurar que Bootstrap elimine correctamente el fondo del modal
+// =========================================================
+// CUALQUIER CIERRE DEL MODAL
+// =========================================================
+
 $('#messageModal').on('hidden.bs.modal', function () {
 
-    $('.modal-backdrop').remove();
-    $('body').removeClass('modal-open');
-    $('body').css('padding-right', '');
+    limpiarModal();
 
 });
 
 
-// Función para validar el formato del email
+// =========================================================
+// FUNCIÓN PARA VALIDAR EMAIL
+// =========================================================
+
 function validateEmail(email) {
+
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     return regex.test(email);
 }
 
 
-// Añadir desplazamiento suave para las secciones
+// =========================================================
+// DESPLAZAMIENTO SUAVE
+// =========================================================
+
 document.addEventListener('DOMContentLoaded', () => {
 
     const navLinks = document.querySelectorAll('a.nav-link');
@@ -173,14 +233,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
             }
+
         });
+
     });
+
 });
 
 
-/* =========================================================
-   CONTACT — LUZ SIGUIENDO AL MOUSE
-========================================================= */
+// =========================================================
+// CONTACT — LUZ SIGUIENDO AL MOUSE
+// =========================================================
 
 const contact = document.querySelector("#contact");
 
