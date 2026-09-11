@@ -1803,7 +1803,7 @@ body:not(.dark-mode) #skills li strong {
 #contact {
     position: relative;
 
-    isolation: isolate;
+    isolation: auto;
 
     overflow: hidden;
 
