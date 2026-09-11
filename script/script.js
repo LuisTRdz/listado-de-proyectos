@@ -62,9 +62,8 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     const formData = {
         _subject: '📩 Nuevo mensaje de contacto - Portafolio',
         _replyto: email,
-        _template: 'table', // Cambia 'box' por 'table' para una presentación más limpia e industrial
+        _template: 'table',
 
-        // Formateo del mensaje estructurado dentro de la propiedad principal
         'Nombre del remitente': name,
         'Correo de contacto': email,
         'Teléfono': userPhone,
@@ -135,6 +134,16 @@ document.getElementById('closeModal').addEventListener('click', function () {
 });
 
 
+// Asegurar que Bootstrap elimine correctamente el fondo del modal
+$('#messageModal').on('hidden.bs.modal', function () {
+
+    $('.modal-backdrop').remove();
+    $('body').removeClass('modal-open');
+    $('body').css('padding-right', '');
+
+});
+
+
 // Función para validar el formato del email
 function validateEmail(email) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -167,6 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
 
 /* =========================================================
    CONTACT — LUZ SIGUIENDO AL MOUSE
