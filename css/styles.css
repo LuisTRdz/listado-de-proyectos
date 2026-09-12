@@ -74,8 +74,8 @@ body {
     overflow-x: hidden;
 
     transition:
-        background .4s ease,
-        color .4s ease;
+        background-color .7s cubic-bezier(.22, 1, .36, 1),
+        color .6s cubic-bezier(.22, 1, .36, 1);
 }
 
 ::selection {
@@ -3307,4 +3307,91 @@ body:not(.dark-mode) #contact .email-legend {
 
 body:not(.dark-mode) #contact .email-legend img {
     opacity: .72;
+}
+
+
+/* =========================================================
+   THEME TRANSITION — MÁS LENTA Y SUAVE
+========================================================= */
+
+body {
+    transition:
+        background-color 1.8s cubic-bezier(.22, 1, .36, 1),
+        color 1.6s cubic-bezier(.22, 1, .36, 1);
+}
+
+.navbar,
+.header,
+.section,
+#about .card,
+.animated-card,
+#contact,
+#contact .card,
+#experience ul,
+#contact .list-unstyled li,
+#skills li,
+.modal-content,
+.modal-header,
+.modal-body,
+.modal-footer,
+footer,
+.form-control {
+    transition:
+        background-color 1.7s cubic-bezier(.22, 1, .36, 1),
+        border-color 1.6s cubic-bezier(.22, 1, .36, 1),
+        color 1.5s cubic-bezier(.22, 1, .36, 1),
+        box-shadow 1.8s cubic-bezier(.22, 1, .36, 1);
+}
+
+.header,
+.section,
+#about .card,
+#contact,
+#contact .card,
+.modal-content,
+.modal-header,
+.modal-body,
+.modal-footer {
+    transition:
+        background 1.9s cubic-bezier(.22, 1, .36, 1),
+        border-color 1.6s cubic-bezier(.22, 1, .36, 1),
+        color 1.5s cubic-bezier(.22, 1, .36, 1),
+        box-shadow 1.9s cubic-bezier(.22, 1, .36, 1);
+}
+
+.header h1,
+.section h2,
+#about .card-text strong,
+#skills h4,
+#experience h5,
+#contact .list-unstyled strong,
+#skills li strong,
+.modal-title,
+.modal-body p strong,
+#contact label,
+.navbar-brand,
+.nav-link {
+    transition:
+        color 1.6s cubic-bezier(.22, 1, .36, 1);
+}
+
+#contact .form-control {
+    transition:
+        background-color 1.8s cubic-bezier(.22, 1, .36, 1),
+        border-color 1.5s cubic-bezier(.22, 1, .36, 1),
+        color 1.5s cubic-bezier(.22, 1, .36, 1),
+        box-shadow 1.8s cubic-bezier(.22, 1, .36, 1);
+}
+
+.toggle-mode label {
+    transition:
+        background-color 1.4s cubic-bezier(.22, 1, .36, 1),
+        border-color 1.4s cubic-bezier(.22, 1, .36, 1),
+        box-shadow 1.5s cubic-bezier(.22, 1, .36, 1);
+}
+
+.toggle-mode label::before {
+    transition:
+        transform 1s cubic-bezier(.22, 1, .36, 1),
+        background-image 1s ease;
 }
