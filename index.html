@@ -7,8 +7,7 @@
     <title>L Blog Luis TR</title>
     <link rel="icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -16,12 +15,15 @@
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <a class="navbar-brand" href="#">
-            <img src="img/logo.png" alt="Logo" style="height: 30px; margin-right: 8px;"> <!-- Logo agregado -->
+            <img src="img/logo.png" alt="Logo" style="height: 30px; margin-right: 8px;">
             Luis TR
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-    <span class="navbar-toggler-icon"></span>
-</button>
+        
+        <!-- BOTÓN CORREGIDO PARA BOOTSTRAP 4 -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active"><a class="nav-link" href="#about">Acerca de mí</a></li>
@@ -43,39 +45,28 @@
             <h2 class="mb-4">Acerca de mí</h2>
             <div class="card shadow-lg p-4" style="border-radius: 15px;">
                 <div class="text-center mb-3">
-                    <img src="img/mi_foto2.png" alt="Foto de Luis" class="img-fluid rounded-circle"
-                        style="max-width: 200px; border: 3px solid #8B0000;"> <!-- Borde de color -->
+                    <img src="img/mi_foto2.png" alt="Foto de Luis" class="img-fluid rounded-circle" style="max-width: 200px; border: 3px solid #8B0000;">
                 </div>
                 <div class="card-body">
-                    <p class="card-text">Hola, soy <strong>Luis Bernardo Torres Rodríguez</strong>, egresado del
-                        Tecnológico de Ciudad Victoria en Ingeniería en Sistemas Computacionales.</p>
-                    <p class="card-text">Tengo una base en programación con lenguajes como <strong>Java, C++ y
-                            Python</strong>. Estoy especialmente interesado en el desarrollo web y busco adquirir
-                        experiencia en bibliotecas y frameworks como <strong>React, Angular, Express y Vue</strong>.</p>
-                    <p class="card-text">Mi objetivo es aprender y aplicar soluciones efectivas en proyectos web. Estoy
-                        entusiasmado por las oportunidades de crecimiento en este campo.</p>
+                    <p class="card-text">Hola, soy <strong>Luis Bernardo Torres Rodríguez</strong>, egresado del Tecnológico de Ciudad Victoria en Ingeniería en Sistemas Computacionales.</p>
+                    <p class="card-text">Tengo una base en programación con lenguajes como <strong>Java, C++ y Python</strong>. Estoy especialmente interesado en el desarrollo web y busco adquirir experiencia en bibliotecas y frameworks como <strong>React, Angular, Express y Vue</strong>.</p>
+                    <p class="card-text">Mi objetivo es aprender y aplicar soluciones efectivas en proyectos web. Estoy entusiasmado por las oportunidades de crecimiento en este campo.</p>
                 </div>
             </div>
         </div>
 
-
         <div id="projects" class="section">
             <h2>Proyectos</h2>
             <div class="row">
-                <!-- Proyecto - InvernaTec -->
                 <div class="col-md-4 col-12 mb-3">
                     <div class="card animated-card">
                         <img src="img/invernatec.png" class="card-img-top" alt="Proyecto - InvernaTec">
                         <div class="card-body">
                             <h5 class="card-title">Proyecto - InvernaTec</h5>
-                            <p class="card-text">Prácticas profesionales en una empresa de exportación hortofrutícola.
-                            </p>
+                            <p class="card-text">Prácticas profesionales en una empresa de exportación hortofrutícola.</p>
                             <div>
-                                <a href="#" class="btn btn-secondary" data-toggle="modal"
-                                    data-target="#modalInvernaTec">Acerca del Proyecto</a>
-                                <a href="../CarpetaProyectos/InvernaTec/index.html" target="_blank"
-                                    class="btn btn-primary">Ver Proyecto<img class="imgBtn-Cards"
-                                        src="./img/enlace-externo.png"></a>
+                                <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#modalInvernaTec">Acerca del Proyecto</a>
+                                <a href="../CarpetaProyectos/InvernaTec/index.html" target="_blank" class="btn btn-primary">Ver Proyecto<img class="imgBtn-Cards" src="./img/enlace-externo.png"></a>
                             </div>
                         </div>
                     </div>
@@ -85,14 +76,10 @@
                         <img src="img/hospital.jpg" class="card-img-top" alt="Proyecto - Hospital">
                         <div class="card-body">
                             <h5 class="card-title">Proyecto - Hospital</h5>
-                            <p class="card-text">Desarrollo de una aplicación web para la gestión de un hospital y
-                                agendar citas médicas.</p>
+                            <p class="card-text">Desarrollo de una aplicación web para la gestión de un hospital y agendar citas médicas.</p>
                             <div>
-                                <a href="#" class="btn btn-secondary" data-toggle="modal"
-                                    data-target="#modalHospital">Acerca del Proyecto</a>
-                                <a href="../CarpetaProyectos/Hospital - Agendar Citas - Administracion/index.html"
-                                    target="_blank" class="btn btn-primary">Ver Proyecto<img class="imgBtn-Cards"
-                                        src="./img/enlace-externo.png"></a>
+                                <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#modalHospital">Acerca del Proyecto</a>
+                                <a href="../CarpetaProyectos/Hospital - Agendar Citas - Administracion/index.html" target="_blank" class="btn btn-primary">Ver Proyecto<img class="imgBtn-Cards" src="./img/enlace-externo.png"></a>
                             </div>
                         </div>
                     </div>
@@ -102,14 +89,10 @@
                         <img src="img/hotel.jpg" class="card-img-top" alt="Proyecto - Hotel">
                         <div class="card-body">
                             <h5 class="card-title">Proyecto - Hotel</h5>
-                            <p class="card-text">Generación de vistas más intuitivas para el cliente y un sistema de
-                                gestión de reservas y habitaciones.</p>
+                            <p class="card-text">Generación de vistas más intuitivas para el cliente y un sistema de gestión de reservas y habitaciones.</p>
                             <div>
-                                <a href="#" class="btn btn-secondary" data-toggle="modal"
-                                    data-target="#modalHotel">Acerca del Proyecto</a>
-                                <a href="../CarpetaProyectos/Hotel - Reservar - Administracion/index.html"
-                                    target="_blank" class="btn btn-primary">Ver Proyecto<img class="imgBtn-Cards"
-                                        src="./img/enlace-externo.png"></a>
+                                <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#modalHotel">Acerca del Proyecto</a>
+                                <a href="../CarpetaProyectos/Hotel - Reservar - Administracion/index.html" target="_blank" class="btn btn-primary">Ver Proyecto<img class="imgBtn-Cards" src="./img/enlace-externo.png"></a>
                             </div>
                         </div>
                     </div>
@@ -119,15 +102,10 @@
                         <img src="img/peliculas.jpg" class="card-img-top" alt="Proyecto - Recomendador">
                         <div class="card-body">
                             <h5 class="card-title">Proyecto - Recomendador</h5>
-                            <p class="card-text">Recomendador de películas según géneros y preferencias, creando
-                                filtraciones para el muestreo (sin películas).</p>
+                            <p class="card-text">Recomendador de películas según géneros y preferencias, creando filtraciones para el muestreo (sin películas).</p>
                             <div>
-
-                                <a href="#" class="btn btn-secondary" data-toggle="modal"
-                                    data-target="#modalRecomendadorPeliculas">Acerca del Proyecto</a>
-                                <a href="../CarpetaProyectos/Recomendador - Peliculas/index.html" target="_blank"
-                                    class="btn btn-primary">Ver Proyecto<img class="imgBtn-Cards"
-                                        src="./img/enlace-externo.png"></a>
+                                <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#modalRecomendadorPeliculas">Acerca del Proyecto</a>
+                                <a href="../CarpetaProyectos/Recomendador - Peliculas/index.html" target="_blank" class="btn btn-primary">Ver Proyecto<img class="imgBtn-Cards" src="./img/enlace-externo.png"></a>
                             </div>
                         </div>
                     </div>
@@ -137,15 +115,10 @@
                         <img src="img/ruleta.jpg" class="card-img-top" alt="Proyecto - Ruleta">
                         <div class="card-body">
                             <h5 class="card-title">Proyecto - Ruleta</h5>
-                            <p class="card-text">Herramienta Web para la generación de números naturales aleatorios en
-                                rangos secuenciales determinados para la obtención de números ganadores.</p>
+                            <p class="card-text">Herramienta Web para la generación de números naturales aleatorios en rangos secuenciales determinados para la obtención de números ganadores.</p>
                             <div>
-
-                                <a href="#" class="btn btn-secondary" data-toggle="modal"
-                                    data-target="#modalRuleta">Acerca del Proyecto</a>
-                                <a href="../CarpetaProyectos/Ruleta/index.html" target="_blank"
-                                    class="btn btn-primary">Ver Proyecto<img class="imgBtn-Cards"
-                                        src="./img/enlace-externo.png"></a>
+                                <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#modalRuleta">Acerca del Proyecto</a>
+                                <a href="../CarpetaProyectos/Ruleta/index.html" target="_blank" class="btn btn-primary">Ver Proyecto<img class="imgBtn-Cards" src="./img/enlace-externo.png"></a>
                             </div>
                         </div>
                     </div>
@@ -153,9 +126,8 @@
             </div>
         </div>
 
-        <!-- Modal para InvernaTec -->
-        <div class="modal fade" id="modalInvernaTec" tabindex="-1" role="dialog" aria-labelledby="modalInvernaTecLabel"
-            aria-hidden="true">
+        <!-- Modales -->
+        <div class="modal fade" id="modalInvernaTec" tabindex="-1" role="dialog" aria-labelledby="modalInvernaTecLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -165,13 +137,10 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p><strong>Descripción:</strong> Proyecto enfocado en la automatización de invernaderos,
-                            incluyendo controles desde dashboards en páginas web para la gestión de dispositivos y la
-                            visualización de los cultivos.</p>
+                        <p><strong>Descripción:</strong> Proyecto enfocado en la automatización de invernaderos, incluyendo controles desde dashboards en páginas web para la gestión de dispositivos y la visualización de los cultivos.</p>
                         <p><strong>Fecha:</strong> Enero 2024 - Julio 2024</p>
                         <p><strong>Autor:</strong> Luis Bernardo Torres Rodríguez</p>
-                        <p><strong>Características:</strong> Automatización, IoT, Dashboards interactivos, control de
-                            dispositivos y cámaras.</p>
+                        <p><strong>Características:</strong> Automatización, IoT, Dashboards interactivos, control de dispositivos y cámaras.</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -180,9 +149,7 @@
             </div>
         </div>
 
-        <!-- Modal para el Hospital -->
-        <div class="modal fade" id="modalHospital" tabindex="-1" role="dialog" aria-labelledby="modalHospitalLabel"
-            aria-hidden="true">
+        <div class="modal fade" id="modalHospital" tabindex="-1" role="dialog" aria-labelledby="modalHospitalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -192,13 +159,10 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p><strong>Descripción:</strong> Sistema de gestión para hospitales que permite el control de
-                            pacientes, citas, y registros médicos, facilitando el acceso a la información para el
-                            personal médico.</p>
+                        <p><strong>Descripción:</strong> Sistema de gestión para hospitales que permite el control de pacientes, citas, y registros médicos, facilitando el acceso a la información para el personal médico.</p>
                         <p><strong>Fecha:</strong> Marzo 2024 - Julio 2024</p>
                         <p><strong>Autor:</strong> Luis Bernardo Torres Rodríguez</p>
-                        <p><strong>Características:</strong> Gestión de pacientes, citas en línea, acceso a registros
-                            médicos, reportes y estadísticas.</p>
+                        <p><strong>Características:</strong> Gestión de pacientes, citas en línea, acceso a registros médicos, reportes y estadísticas.</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -207,10 +171,7 @@
             </div>
         </div>
 
-
-        <!-- Modal para el Hotel -->
-        <div class="modal fade" id="modalHotel" tabindex="-1" role="dialog" aria-labelledby="modalHotelLabel"
-            aria-hidden="true">
+        <div class="modal fade" id="modalHotel" tabindex="-1" role="dialog" aria-labelledby="modalHotelLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -220,13 +181,10 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p><strong>Descripción:</strong> Plataforma de reservas para hoteles que permite gestionar la
-                            disponibilidad de habitaciones, realizar reservas y ofrecer servicios adicionales a los
-                            huéspedes.</p>
+                        <p><strong>Descripción:</strong> Plataforma de reservas para hoteles que permite gestionar la disponibilidad de habitaciones, realizar reservas y ofrecer servicios adicionales a los huéspedes.</p>
                         <p><strong>Fecha:</strong> Abril 2024 - Octubre 2024</p>
                         <p><strong>Autor:</strong> Luis Bernardo Torres Rodríguez</p>
-                        <p><strong>Características:</strong> Reservas en línea, gestión de habitaciones, servicio al
-                            cliente, integración con pagos electrónicos.</p>
+                        <p><strong>Características:</strong> Reservas en línea, gestión de habitaciones, servicio al cliente, integración con pagos electrónicos.</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -235,26 +193,20 @@
             </div>
         </div>
 
-
-        <!-- Modal para el Recomendador de Películas -->
-        <div class="modal fade" id="modalRecomendadorPeliculas" tabindex="-1" role="dialog"
-            aria-labelledby="modalRecomendadorPeliculasLabel" aria-hidden="true">
+        <div class="modal fade" id="modalRecomendadorPeliculas" tabindex="-1" role="dialog" aria-labelledby="modalRecomendadorPeliculasLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="modalRecomendadorPeliculasLabel">Proyecto - Recomendador de
-                            Películas</h5>
+                        <h5 class="modal-title" id="modalRecomendadorPeliculasLabel">Proyecto - Recomendador de Películas</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p><strong>Descripción:</strong> Aplicación que sugiere películas a los usuarios basándose en
-                            sus preferencias y valoraciones anteriores, utilizando algoritmos de recomendación.</p>
+                        <p><strong>Descripción:</strong> Aplicación que sugiere películas a los usuarios basándose en sus preferencias y valoraciones anteriores, utilizando algoritmos de recomendación.</p>
                         <p><strong>Fecha:</strong> Mayo 2024 - Octubre 2024</p>
                         <p><strong>Autor:</strong> Luis Bernardo Torres Rodríguez</p>
-                        <p><strong>Características:</strong> Algoritmos de recomendación, interfaz intuitiva, búsqueda y
-                            filtrado de películas.</p>
+                        <p><strong>Características:</strong> Algoritmos de recomendación, interfaz intuitiva, búsqueda y filtrado de películas.</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -263,10 +215,7 @@
             </div>
         </div>
 
-
-        <!-- Modal para la Ruleta -->
-        <div class="modal fade" id="modalRuleta" tabindex="-1" role="dialog" aria-labelledby="modalRuletaLabel"
-            aria-hidden="true">
+        <div class="modal fade" id="modalRuleta" tabindex="-1" role="dialog" aria-labelledby="modalRuletaLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -276,12 +225,10 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p><strong>Descripción:</strong> Juego de ruleta virtual donde los usuarios pueden realizar
-                            apuestas y disfrutar de una experiencia interactiva con gráficos dinámicos.</p>
+                        <p><strong>Descripción:</strong> Juego de ruleta virtual donde los usuarios pueden realizar apuestas y disfrutar de una experiencia interactiva con gráficos dinámicos.</p>
                         <p><strong>Fecha:</strong> Octubre 2024</p>
                         <p><strong>Autor:</strong> Luis Bernardo Torres Rodríguez</p>
-                        <p><strong>Características:</strong> Interfaz de usuario atractiva, múltiples tipos de apuestas,
-                            resultados en tiempo real.</p>
+                        <p><strong>Características:</strong> Interfaz de usuario atractiva, múltiples tipos de apuestas, resultados en tiempo real.</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -290,14 +237,12 @@
             </div>
         </div>
 
-
-
         <div id="skills" class="section">
             <h2>Habilidades</h2>
             <h4 style="margin-left: 20px;"><strong>Habilidades Técnicas</strong></h4>
             <h6 style="margin-left: 40px;"><strong>Lenguajes de programación</strong></h6>
             <ul style="margin-left: 40px;">
-                <li>Java <img src="img/java.png" alt="Java" style="height: 20px;"></li> <!-- Imagen referencial -->
+                <li>Java <img src="img/java.png" alt="Java" style="height: 20px;"></li>
                 <li>C++ <img src="img/C++.png" alt="C++" style="height: 20px;"></li>
                 <li>Python <img src="img/python.png" alt="Python" style="height: 20px;"></li>
             </ul>
@@ -333,10 +278,8 @@
             <h4 style="margin-left: 20px;"><strong>Habilidades Interpersonales</strong></h4>
             <ul style="margin-left: 20px;">
                 <li><strong>Trabajo en Equipo:</strong> Colaboración efectiva en proyectos grupales.</li>
-                <li><strong>Comunicación:</strong> Habilidad para explicar conceptos técnicos a personas no técnicas.
-                </li>
-                <li><strong>Resolución de Problemas:</strong> Capacidad para enfrentar y resolver desafíos técnicos.
-                </li>
+                <li><strong>Comunicación:</strong> Habilidad para explicar conceptos técnicos a personas no técnicas.</li>
+                <li><strong>Resolución de Problemas:</strong> Capacidad para enfrentar y resolver desafíos técnicos.</li>
             </ul>
             <br>
             <h4 style="margin-left: 20px;"><strong>Habilidades Organizativas</strong></h4>
@@ -348,7 +291,6 @@
 
         <div id="experience" class="section">
             <h2>Experiencia</h2>
-
             <h5><strong>Desarrollador Web Freelance</strong></h5>
             <p><em>Junio 2022 - Presente</em></p>
             <ul>
@@ -360,62 +302,45 @@
             <h5><strong>Prácticas Profesionales - Empresa Hortofrutícola</strong></h5>
             <p><em>Enero 2024 - Julio 2024</em></p>
             <ul>
-                <li>Desarrollo de un sistema de monitoreo para invernaderos automatizados, utilizando sensores de
-                    temperatura y humedad.</li>
-                <li>Implementación de dashboards web para visualizar datos en tiempo real y controlar sistemas de riego
-                    y ventilación de forma remota.</li>
-                <li>Colaboración con un equipo multidisciplinario para integrar tecnologías IoT en el sector agrícola.
-                </li>
+                <li>Desarrollo de un sistema de monitoreo para invernaderos automatizados, utilizando sensores de temperatura y humedad.</li>
+                <li>Implementación de dashboards web para visualizar datos en tiempo real y controlar sistemas de riego y ventilación de forma remota.</li>
+                <li>Colaboración con un equipo multidisciplinario para integrar tecnologías IoT en el sector agrícola.</li>
             </ul>
 
             <h5><strong>Ingeniero de Software - Proyecto Hospital</strong></h5>
             <p><em>Octubre 2023 - Diciembre 2023</em></p>
             <ul>
                 <li>Creación de una aplicación web para gestionar citas y expedientes médicos.</li>
-                <li>Implementación de una interfaz amigable para el usuario, optimizada para dispositivos móviles y de
-                    escritorio.</li>
+                <li>Implementación de una interfaz amigable para el usuario, optimizada para dispositivos móviles y de escritorio.</li>
                 <li>Integración de un sistema de notificaciones para recordatorios de citas a los pacientes.</li>
             </ul>
         </div>
 
-
-
         <div id="contact" class="section mt-5">
             <h2 class="text-center mb-4" style="font-size: 2.5rem;">Contacto</h2>
-            <p class="text-center" style="font-size: 1.2rem;">Puedes contactarme a través de las siguientes plataformas:
-            </p>
+            <p class="text-center" style="font-size: 1.2rem;">Puedes contactarme a través de las siguientes plataformas:</p>
             <ul class="list-unstyled text-center">
                 <li><strong>Teléfono:</strong> +52 834 148 8987</li>
-                <li><strong>Email:</strong> <a href="mailto:luistrsiul@gmail.com">Luis Bernardo Torres Rodríguez</a>
-                </li>
+                <li><strong>Email:</strong> <a href="mailto:luistrsiul@gmail.com">Luis Bernardo Torres Rodríguez</a></li>
             </ul>
 
             <div class="social-icons text-center mb-4">
-
-                <a href="https://www.facebook.com/profile.php?id=61560617143237" target="_blank"
-                    rel="noopener noreferrer" aria-label="Facebook">
+                <a href="https://www.facebook.com/profile.php?id=61560617143237" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                     <img src="./img/fbLogo.webp" alt="Facebook">
                 </a>
-
-                <a href="https://x.com/luistr63361196?s=11" target="_blank" rel="noopener noreferrer"
-                    aria-label="Twitter">
+                <a href="https://x.com/luistr63361196?s=11" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                     <img src="./img/xLogo.webp" alt="Twitter">
                 </a>
-
-                <a href="http://www.linkedin.com/in/luis-bernardo-torres-rodr%C3%ADguez" target="_blank"
-                    rel="noopener noreferrer" aria-label="LinkedIn">
+                <a href="http://www.linkedin.com/in/luis-bernardo-torres-rodr%C3%ADguez" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <img src="./img/linkedinLogo.png" alt="LinkedIn">
                 </a>
-
                 <a href="https://github.com/LuisTRdz" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <img src="./img/gitLogo.png" alt="GitHub">
                 </a>
-
             </div>
 
             <p class="text-center" style="font-size: 1.2rem;">También puedes dejarme un mensaje a continuación:</p>
 
-            <!-- Formulario -->
             <div class="card shadow-lg p-4" style="border-radius: 15px;">
                 <form id="contactForm" action="#" method="post">
                     <div class="form-group">
@@ -428,8 +353,7 @@
                     </div>
                     <div class="form-group">
                         <label for="userPhone">Número de Teléfono (10 dígitos)</label>
-                        <input type="tel" class="form-control" id="userPhone" name="userPhone" required pattern="\d{10}"
-                            title="Ingrese exactamente 10 dígitos." maxlength="10">
+                        <input type="tel" class="form-control" id="userPhone" name="userPhone" required pattern="\d{10}" title="Ingrese exactamente 10 dígitos." maxlength="10">
                         <small class="form-text text-muted">Ingresa tu número sin espacios ni guiones.</small>
                     </div>
                     <div class="form-group">
@@ -439,17 +363,13 @@
                     <button type="submit" class="btn btn-primary btn-block">Enviar</button>
                 </form>
 
-                <!-- Leyenda de correo -->
                 <div class="email-legend">
                     <img src="./img/gmail.png" alt="Correo electrónico">
-                    <span>Los mensajes enviados a través de este formulario se recibirán directamente en mi correo
-                        electrónico.</span>
+                    <span>Los mensajes enviados a través de este formulario se recibirán directamente en mi correo electrónico.</span>
                 </div>
             </div>
 
-            <!-- Modal -->
-            <div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="messageModalLabel"
-                aria-hidden="true">
+            <div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="messageModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -462,18 +382,15 @@
                             Tu mensaje ha sido enviado correctamente.
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" id="sendAnother">Enviar Otro
-                                Mensaje</button>
+                            <button type="button" class="btn btn-secondary" id="sendAnother">Enviar Otro Mensaje</button>
                             <button type="button" class="btn btn-primary" id="closeModal">Cerrar</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
     </div>
+
     <div class="floating-toggle">
         <div class="toggle-mode">
             <input type="checkbox" id="toggleSwitch">
@@ -485,9 +402,11 @@
         <p>&copy; 2024 Luis TR. Todos los derechos reservados.</p>
     </footer>
 
+    <!-- LIBRERÍAS JS DE BOOTSTRAP 4 -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="script/script.js"></script> <!-- Aquí se refiere a script.js -->
+    <script src="script/script.js"></script>
 </body>
+
 </html>
