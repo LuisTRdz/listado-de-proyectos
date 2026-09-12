@@ -3,16 +3,15 @@
 // =========================================================
 const toggleButton = document.getElementById('toggleSwitch');
 
-if (toggleButton) {
-    toggleButton.addEventListener('change', () => {
-        document.body.classList.toggle('dark-mode', toggleButton.checked);
-        localStorage.setItem('darkMode', toggleButton.checked);
-    });
+toggleButton.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode', toggleButton.checked);
+    localStorage.setItem('darkMode', toggleButton.checked);
+});
 
-    const darkMode = localStorage.getItem('darkMode') === 'true';
-    toggleButton.checked = darkMode;
-    document.body.classList.toggle('dark-mode', darkMode);
-}
+const darkMode = localStorage.getItem('darkMode') === 'true';
+
+toggleButton.checked = darkMode;
+document.body.classList.toggle('dark-mode', darkMode);
 
 
 // =========================================================
